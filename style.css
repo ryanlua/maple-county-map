@@ -39,3 +39,13 @@
     background-color: var(--dark-gray);
     color: var(--light-gray);
 }
+
+.leaflet-touch .leaflet-bar a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 28px;
+}
