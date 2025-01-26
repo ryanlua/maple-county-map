@@ -1,4 +1,41 @@
+:root {
+    --light-gray: #595959;
+    --medium-gray: #3c3c3c;
+    --dark-gray: #1e1e1e;
+}
+
 /* Background */
 .leaflet-container {
     background: #a3cdfe;
+}
+
+/* Zoom Control */
+.leaflet-bar a {
+    background-color: var(--medium-gray);
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid var(--dark-gray) !important;
+}
+
+.leaflet-touch .leaflet-bar a:first-child {
+    margin-bottom: 5px;
+}
+
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+    border: none;
+}
+
+.leaflet-touch .leaflet-bar a {
+    border-radius: 50% !important;
+}
+
+.leaflet-bar a:hover,
+.leaflet-bar a:focus {
+    background-color: var(--light-gray);
+}
+
+.leaflet-bar a.leaflet-disabled {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
 }
