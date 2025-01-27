@@ -10,11 +10,34 @@ const map = L.map('map', {
 
 const image = L.imageOverlay('map.png', bounds).addTo(map);
 
-var marker = L.marker([285, 665]).addTo(map);
-
 map.setView([550, 575], 0);
 
+// DEBUG: Add a marker on right-click
 map.on("contextmenu", function (event) {
     console.log("user right-clicked on map coordinates: " + event.latlng.toString());
     L.marker(event.latlng).addTo(map);
 });
+
+function onEachFeature(feature, layer) {
+    if (feature.properties && feature.properties.popupContent) {
+        popupContent = feature.properties.popupContent;
+        layer.bindPopup(popupContent);
+    }
+
+    if (feature.properties && feature.properties.title) {
+        title = feature.properties.title;
+        layer.bindTooltip(title);
+    }
+}
+
+const gasStationLayer = L.geoJSON([gasStations], {
+    style(feature) {
+        return feature.properties && feature.properties.style;
+    },
+
+    onEachFeature,
+
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng);
+    }
+}).addTo(map);
