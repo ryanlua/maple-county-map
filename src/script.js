@@ -35,6 +35,7 @@ const MarkerIcon = L.Icon.extend({
 
 const gasStationIcon = new MarkerIcon({ iconUrl: 'gas-station-marker.png' });
 const gunStoreIcon = new MarkerIcon({ iconUrl: 'gun-store-marker.png' });
+const jobIcon = new MarkerIcon({ iconUrl: 'job-marker.png' });
 
 const gasStationLayer = L.geoJSON([gasStations], {
 
@@ -60,10 +61,23 @@ const gunStoresLayer = L.geoJSON([gunStores], {
     onEachFeature
 }).addTo(map);
 
+const jobLayer = L.geoJSON([jobs], {
+
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: jobIcon,
+            title: 'Job'
+        });
+    },
+
+    onEachFeature
+}).addTo(map);
+
 const baseLayers = {};
 const overlays = {
     'Gas Stations': gasStationLayer,
-    'Gun Stores': gunStoresLayer
+    'Gun Stores': gunStoresLayer,
+    'Jobs': jobLayer
 };
 
 L.control.layers(baseLayers, overlays).addTo(map);
