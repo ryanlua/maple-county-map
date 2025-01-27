@@ -4,13 +4,13 @@ const map = L.map('map', {
     crs: L.CRS.Simple,
     minZoom: -1,
     maxZoom: 4,
+    center: [550, 575],
+    zoom: 0,
     attributionControl: false,
     maxBounds: bounds
 });
 
 const image = L.imageOverlay('map.png', bounds).addTo(map);
-
-map.setView([550, 575], 0);
 
 // DEBUG: Add a marker on right-click
 map.on("contextmenu", function (event) {
