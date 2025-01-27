@@ -30,6 +30,18 @@ function onEachFeature(feature, layer) {
     }
 }
 
+const gasStationIcon = L.icon({
+    iconUrl: 'gas-station-marker.png',
+    iconSize: [38, 64],
+    iconAnchor: [19, 62],
+    popupAnchor: [0, -62]
+});
+
 const gasStationLayer = L.geoJSON([gasStations], {
-    onEachFeature: onEachFeature
+
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, { icon: gasStationIcon });
+    },
+
+    onEachFeature
 }).addTo(map);
