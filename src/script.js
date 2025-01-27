@@ -39,11 +39,21 @@ const MarkerIcon = L.Icon.extend({
 });
 
 const gasStationIcon = new MarkerIcon({iconUrl: 'gas-station-marker.png'});
+const gunStoreIcon = new MarkerIcon({iconUrl: 'gun-store-marker.png'});
 
 const gasStationLayer = L.geoJSON([gasStations], {
 
     pointToLayer(feature, latlng) {
         return L.marker(latlng, { icon: gasStationIcon });
+    },
+
+    onEachFeature
+}).addTo(map);
+
+const gunStoresLayer = L.geoJSON([gunStores], {
+
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, { icon: gunStoreIcon });
     },
 
     onEachFeature
