@@ -31,13 +31,5 @@ function onEachFeature(feature, layer) {
 }
 
 const gasStationLayer = L.geoJSON([gasStations], {
-    style(feature) {
-        return feature.properties && feature.properties.style;
-    },
-
-    onEachFeature,
-
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng);
-    }
+    onEachFeature: onEachFeature
 }).addTo(map);
