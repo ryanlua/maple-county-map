@@ -19,14 +19,9 @@ map.on("contextmenu", function (event) {
 });
 
 function onEachFeature(feature, layer) {
-    if (feature.properties && feature.properties.popupContent) {
-        popupContent = feature.properties.popupContent;
+    if (feature.properties && feature.properties.name) {
+        popupContent = feature.properties.name;
         layer.bindPopup(popupContent);
-    }
-
-    if (feature.properties && feature.properties.title) {
-        title = feature.properties.title;
-        layer.bindTooltip(title);
     }
 }
 
@@ -38,13 +33,16 @@ const MarkerIcon = L.Icon.extend({
     }
 });
 
-const gasStationIcon = new MarkerIcon({iconUrl: 'gas-station-marker.png'});
-const gunStoreIcon = new MarkerIcon({iconUrl: 'gun-store-marker.png'});
+const gasStationIcon = new MarkerIcon({ iconUrl: 'gas-station-marker.png' });
+const gunStoreIcon = new MarkerIcon({ iconUrl: 'gun-store-marker.png' });
 
 const gasStationLayer = L.geoJSON([gasStations], {
 
     pointToLayer(feature, latlng) {
-        return L.marker(latlng, { icon: gasStationIcon });
+        return L.marker(latlng, {
+            icon: gasStationIcon,
+            title: 'Gas Station'
+        });
     },
 
     onEachFeature
@@ -53,8 +51,19 @@ const gasStationLayer = L.geoJSON([gasStations], {
 const gunStoresLayer = L.geoJSON([gunStores], {
 
     pointToLayer(feature, latlng) {
-        return L.marker(latlng, { icon: gunStoreIcon });
+        return L.marker(latlng, {
+            icon: gunStoreIcon,
+            title: 'Gun Store'
+        });
     },
 
     onEachFeature
 }).addTo(map);
+
+const baseLayers = {};
+const overlays = {
+    'Gas Stations': gasStationLayer,
+    'Gun Stores': gunStoresLayer
+};
+
+L.control.layers(baseLayers, overlays).addTo(map);

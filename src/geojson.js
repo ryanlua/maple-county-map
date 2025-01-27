@@ -11,8 +11,7 @@ var gasStations = {
             },
             "type": "Feature",
             "properties": {
-                "title": "Gas Station",
-                "popupContent": "1/11 Gas Station"
+                "name": "1/11 Gas Station"
             }
         },
         {
@@ -25,8 +24,7 @@ var gasStations = {
             },
             "type": "Feature",
             "properties": {
-                "title": "Gas Station",
-                "popupContent": "1/11 County Gas Station"
+                "name": "1/11 County Gas Station"
             }
         },
         {
@@ -39,8 +37,7 @@ var gasStations = {
             },
             "type": "Feature",
             "properties": {
-                "title": "Gas Station",
-                "popupContent": "ElkTrip Gas Station"
+                "name": "ElkTrip Gas Station"
             }
         },
     ]
@@ -59,8 +56,7 @@ var gunStores = {
             },
             "type": "Feature",
             "properties": {
-                "title": "Gun Store",
-                "popupContent": "Valkyrian Arms"
+                "name": "Valkyrian Arms"
             }
         },
         {
@@ -73,8 +69,7 @@ var gunStores = {
             },
             "type": "Feature",
             "properties": {
-                "title": "Gun Store",
-                "popupContent": "Bacon's Blickys"
+                "name": "Bacon's Blickys"
             }
         },
     ]
