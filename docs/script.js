@@ -23,6 +23,10 @@ function onEachFeature(feature, layer) {
         popupContent = feature.properties.name;
         layer.bindPopup(popupContent);
     }
+    if (feature.properties && feature.properties.icon) {
+        icon = new MarkerIcon({ iconUrl: feature.properties.icon });
+        layer.setIcon(icon);
+    }
 }
 
 const MarkerIcon = L.Icon.extend({
@@ -33,51 +37,100 @@ const MarkerIcon = L.Icon.extend({
     }
 });
 
-const gasStationIcon = new MarkerIcon({ iconUrl: 'gas-station-marker.png' });
-const gunStoreIcon = new MarkerIcon({ iconUrl: 'gun-store-marker.png' });
-const jobIcon = new MarkerIcon({ iconUrl: 'job-marker.png' });
+const teamsLayer = L.geoJSON([teams], {
+    onEachFeature
+}).addTo(map);
 
 const gasStationLayer = L.geoJSON([gasStations], {
-
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: gasStationIcon,
+            icon: new MarkerIcon({ iconUrl: 'gas-station-marker.png' }),
             title: 'Gas Station'
         });
     },
-
     onEachFeature
 }).addTo(map);
 
 const gunStoresLayer = L.geoJSON([gunStores], {
-
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: gunStoreIcon,
+            icon: new MarkerIcon({ iconUrl: 'gun-store-marker.png' }),
             title: 'Gun Store'
         });
     },
-
     onEachFeature
 }).addTo(map);
 
 const jobLayer = L.geoJSON([jobs], {
-
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: jobIcon,
+            icon: new MarkerIcon({ iconUrl: 'job-marker.png' }),
             title: 'Job'
         });
     },
+    onEachFeature
+}).addTo(map);
 
+const hospitalsLayer = L.geoJSON([hospitals], {
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'hospital-marker.png' }),
+            title: 'Hospital'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
+const banksLayer = L.geoJSON([banks], {
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'bank-marker.png' }),
+            title: 'Bank'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
+const mechanicsLayer = L.geoJSON([mechanics], {
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'mechanics-marker.png' }),
+            title: 'Mechanics'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
+const dealershipsLayer = L.geoJSON([dealerships], {
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'dealership-marker.png' }),
+            title: 'Dealership'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
+const otherLayer = L.geoJSON([other], {
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            title: 'Other'
+        });
+    },
     onEachFeature
 }).addTo(map);
 
 const baseLayers = {};
 const overlays = {
+    'Teams': teamsLayer,
+    'Jobs': jobLayer,
     'Gas Stations': gasStationLayer,
     'Gun Stores': gunStoresLayer,
-    'Jobs': jobLayer
+    'Hospitals': hospitalsLayer,
+    'Banks': banksLayer,
+    'Dealerships': dealershipsLayer,
+    'Mechanics': mechanicsLayer,
+    'Other': otherLayer,
 };
 
 L.control.layers(baseLayers, overlays).addTo(map);
