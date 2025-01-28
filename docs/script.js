@@ -10,7 +10,7 @@ const map = L.map('map', {
     maxBounds: bounds
 });
 
-const image = L.imageOverlay('map.png', bounds).addTo(map);
+const image = L.imageOverlay('map.avif', bounds).addTo(map);
 
 // DEBUG: Add a marker on right-click
 map.on("contextmenu", function (event) {
