@@ -128,6 +128,7 @@ const housesLayer = L.geoJSON([houses], {
 const otherLayer = L.geoJSON([other], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'orange-marker.png' }),
             title: 'Other'
         });
     },

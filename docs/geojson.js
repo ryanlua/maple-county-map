@@ -11,7 +11,7 @@ var gasStations = {
             },
             "type": "Feature",
             "properties": {
-                "name": "1/11 Gas Station"
+                "name": "1/11 Gas Station, 2000"
             }
         },
         {
@@ -24,7 +24,7 @@ var gasStations = {
             },
             "type": "Feature",
             "properties": {
-                "name": "1/11 County Gas Station"
+                "name": "1/11 County Gas Station, 2014"
             }
         },
         {
@@ -88,7 +88,7 @@ var jobs = {
             },
             "type": "Feature",
             "properties": {
-                "name": "Droppin' Donuts"
+                "name": "Droppin' Donuts, 2002"
             }
         },
         {
@@ -187,7 +187,7 @@ var teams = {
             },
             "type": "Feature",
             "properties": {
-                "name": "Maple County Sheriffs Office",
+                "name": "Maple County Sheriffs Office, 2015",
                 "icon": "mcso-marker.png"
             }
         },
@@ -449,6 +449,97 @@ var other = {
             "properties": {
                 "name": "TechnoStore",
                 "icon": "techno-marker.png"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    757,
+                    362
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Maple Mart, 2001"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    711,
+                    364
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Soobway, 2000"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    792,
+                    360
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Blox Burger, 2002"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    678,
+                    362
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Knuckle Heads, 2000"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    711,
+                    284
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Maple County Court, 1014"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    750,
+                    284
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Wyatt Skatepark, 1015"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    753,
+                    248
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "British International Development Bank, 1009"
             }
         },
     ]
