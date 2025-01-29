@@ -453,3 +453,191 @@ var other = {
         },
     ]
 };
+
+var houses = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    568,
+                    474
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "12 Archer Court, 3005",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    568,
+                    461
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "15 Archer Court, 3005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    568,
+                    487
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "14 Archer Court, 3005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    551,
+                    472
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "13 Archer Court, 3005",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    551,
+                    457
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "11 Archer Court, 3005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    551,
+                    487
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "15 Archer Court, 3005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    551,
+                    512
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "17 Archer Road, 3006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    551,
+                    525
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "19 Archer Road, 3006",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    570,
+                    512
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "16 Archer Road, 3006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    568,
+                    527
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "18 Archer Road, 3006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    568,
+                    541
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "20 Archer Road, 3006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    527,
+                    523
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "22 Archer Road, 3005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    527,
+                    508
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "21 Archer Road, 3005",
+                "buyable": false
+            }
+        },
+    ]
+};

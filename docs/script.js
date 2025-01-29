@@ -27,6 +27,11 @@ function onEachFeature(feature, layer) {
         icon = new MarkerIcon({ iconUrl: feature.properties.icon });
         layer.setIcon(icon);
     }
+    if (feature.properties && feature.properties.buyable) {
+        if (feature.properties.buyable) {
+            layer.bindTooltip("Buyable");
+        }
+    }
 }
 
 const MarkerIcon = L.Icon.extend({
@@ -111,6 +116,16 @@ const dealershipsLayer = L.geoJSON([dealerships], {
     onEachFeature
 }).addTo(map);
 
+const housesLayer = L.geoJSON([houses], {
+    pointToLayer(feature, latlng) {
+        return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'house-marker.png' }),
+            title: 'House'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
 const otherLayer = L.geoJSON([other], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
@@ -130,6 +145,7 @@ const overlays = {
     'Banks': banksLayer,
     'Dealerships': dealershipsLayer,
     'Mechanics': mechanicsLayer,
+    'Houses': housesLayer,
     'Other': otherLayer,
 };
 
