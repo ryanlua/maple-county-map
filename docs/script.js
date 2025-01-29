@@ -28,9 +28,8 @@ function onEachFeature(feature, layer) {
         layer.setIcon(icon);
     }
     if (feature.properties && feature.properties.buyable) {
-        if (feature.properties.buyable) {
-            layer.bindTooltip("Buyable");
-        }
+        icon = new MarkerIcon({ iconUrl: 'house-marker.png' });
+        layer.setIcon(icon);
     }
 }
 
@@ -119,7 +118,7 @@ const dealershipsLayer = L.geoJSON([dealerships], {
 const housesLayer = L.geoJSON([houses], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'house-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'empty-marker.png' }),
             title: 'House'
         });
     },

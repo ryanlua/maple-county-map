@@ -461,6 +461,20 @@ var houses = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    792,
+                    211
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Fairfield Apartments, 1008",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     568,
                     474
                 ]
@@ -468,7 +482,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "12 Archer Court, 3005",
-                "buyable": true
+                "buyable": false
             }
         },
         {
@@ -510,7 +524,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "13 Archer Court, 3005",
-                "buyable": true
+                "buyable": false
             }
         },
         {
@@ -608,7 +622,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "20 Archer Road, 3006",
-                "buyable": false
+                "buyable": true
             }
         },
         {
@@ -621,7 +635,7 @@ var houses = {
             },
             "type": "Feature",
             "properties": {
-                "name": "22 Archer Road, 3005",
+                "name": "22 Pinewood Ave, 3005",
                 "buyable": false
             }
         },
@@ -635,9 +649,429 @@ var houses = {
             },
             "type": "Feature",
             "properties": {
-                "name": "21 Archer Road, 3005",
+                "name": "21 Pinewood Ave, 3005",
                 "buyable": false
             }
         },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    729,
+                    445
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "10 Highland Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    729,
+                    462
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "11 Highland Street, 2006",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    729,
+                    475
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "12 Highland Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    729,
+                    493
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "13 Highland Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    729,
+                    510
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "14 Highland Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    707,
+                    445
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "21 Oxford Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    707,
+                    462
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "23 Oxford Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    707,
+                    475
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "24 Oxford Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    707,
+                    493
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "26 Oxford Street, 2006",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    707,
+                    510
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "28 Oxford Street, 2006",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    692,
+                    445
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "20 Oxford Street, 2005",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    692,
+                    460
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "22 Oxford Street, 2005",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    692,
+                    490
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "25 Oxford Street, 2009",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    692,
+                    507
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "27 Oxford Street, 2009",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    670,
+                    445
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "30 Grove Street, 2005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    670,
+                    460
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "31 Grove Street, 2005",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    670,
+                    490
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "32 Grove Street, 2009",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    670,
+                    507
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "33 Grove Street, 2009",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    704,
+                    677
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "21 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    697,
+                    710
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "17 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    682,
+                    684
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "23 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    657,
+                    691
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "18 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    665,
+                    716
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "15 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    630,
+                    721
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "13 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    636,
+                    691
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "16 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    608,
+                    694
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "14 Crazy Court, 5000",
+                "buyable": true
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    589,
+                    693
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "12 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    585,
+                    739
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "1 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    728,
+                    708
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "19 Crazy Court, 5000",
+                "buyable": false
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    728,
+                    678
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "20 Crazy Court, 5000",
+                "buyable": false
+            }
+        }
     ]
 };
