@@ -31,6 +31,10 @@ function onEachFeature(feature, layer) {
         icon = new MarkerIcon({ iconUrl: 'house-marker.png' });
         layer.setIcon(icon);
     }
+    if (feature.properties && feature.properties.postalCode) {
+        postalCode = feature.properties.postalCode;
+        layer.bindTooltip(postalCode);
+    }
 }
 
 const MarkerIcon = L.Icon.extend({
