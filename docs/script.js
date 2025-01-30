@@ -33,6 +33,8 @@ function onEachFeature(feature, layer) {
     }
     if (feature.properties && feature.properties.postalCode) {
         postalCode = feature.properties.postalCode;
+        popupContent += ', ' + feature.properties.postalCode;
+        layer.bindPopup(popupContent);
         layer.bindTooltip(postalCode);
     }
 }
