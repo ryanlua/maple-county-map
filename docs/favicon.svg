@@ -1,9 +1,9 @@
-<svg width="128" height="128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill="url(#a)" d="M0 0h128v128H0z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="491" height="787">
+  <path fill="url(#a)" stroke="#3C3C3C" stroke-width="21.5" d="M246 11A240 240 0 0 0 11 243c0 54 30 123 52 171l182 349 181-349c22-48 54-114 54-171 0-121-105-232-234-232Zm0 140a92 92 0 1 1-91 92c0-51 41-92 91-92Z"/>
   <defs>
-    <linearGradient id="a" x1="64" y1="0" x2="64" y2="128" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1714E9"/>
-      <stop offset="1" stop-color="#BC0D3F"/>
+    <linearGradient id="a" x2="0" y2="1">
+      <stop stop-color="#BC0D3F"/>
+      <stop offset="1" stop-color="#1714E9"/>
     </linearGradient>
   </defs>
 </svg>

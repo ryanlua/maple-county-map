@@ -10,7 +10,7 @@ const map = L.map('map', {
     maxBounds: bounds
 });
 
-const image = L.imageOverlay('map.avif', bounds).addTo(map);
+const image = L.imageOverlay('images/map.avif', bounds).addTo(map);
 
 // DEBUG: Add a marker on right-click
 map.on("contextmenu", function (event) {
@@ -28,7 +28,7 @@ function onEachFeature(feature, layer) {
         layer.setIcon(icon);
     }
     if (feature.properties && feature.properties.buyable) {
-        icon = new MarkerIcon({ iconUrl: 'house-marker.png' });
+        icon = new MarkerIcon({ iconUrl: 'images/house-marker.png' });
         layer.setIcon(icon);
     }
     if (feature.properties && feature.properties.postalCode) {
@@ -54,7 +54,7 @@ const teamsLayer = L.geoJSON([teams], {
 const gasStationLayer = L.geoJSON([gasStations], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'gas-station-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/gas-station-marker.png' }),
             title: 'Gas Station'
         });
     },
@@ -64,7 +64,7 @@ const gasStationLayer = L.geoJSON([gasStations], {
 const gunStoresLayer = L.geoJSON([gunStores], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'gun-store-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/gun-store-marker.png' }),
             title: 'Gun Store'
         });
     },
@@ -74,7 +74,7 @@ const gunStoresLayer = L.geoJSON([gunStores], {
 const jobLayer = L.geoJSON([jobs], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'job-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/job-marker.png' }),
             title: 'Job'
         });
     },
@@ -84,7 +84,7 @@ const jobLayer = L.geoJSON([jobs], {
 const hospitalsLayer = L.geoJSON([hospitals], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'hospital-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/hospital-marker.png' }),
             title: 'Hospital'
         });
     },
@@ -94,7 +94,7 @@ const hospitalsLayer = L.geoJSON([hospitals], {
 const banksLayer = L.geoJSON([banks], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'bank-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/bank-marker.png' }),
             title: 'Bank'
         });
     },
@@ -104,7 +104,7 @@ const banksLayer = L.geoJSON([banks], {
 const mechanicsLayer = L.geoJSON([mechanics], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'mechanics-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/mechanics-marker.png' }),
             title: 'Mechanics'
         });
     },
@@ -114,7 +114,7 @@ const mechanicsLayer = L.geoJSON([mechanics], {
 const dealershipsLayer = L.geoJSON([dealerships], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'dealership-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/dealership-marker.png' }),
             title: 'Dealership'
         });
     },
@@ -124,7 +124,7 @@ const dealershipsLayer = L.geoJSON([dealerships], {
 const housesLayer = L.geoJSON([houses], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'empty-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/empty-marker.png' }),
             title: 'House'
         });
     },
@@ -134,7 +134,7 @@ const housesLayer = L.geoJSON([houses], {
 const otherLayer = L.geoJSON([other], {
     pointToLayer(feature, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'orange-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/orange-marker.png' }),
             title: 'Other'
         });
     },
