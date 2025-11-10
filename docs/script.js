@@ -129,7 +129,7 @@ const housesLayer = L.geoJSON([houses], {
         });
     },
     onEachFeature
-}).addTo(map);
+});
 
 const otherLayer = L.geoJSON([other], {
     pointToLayer(feature, latlng) {
@@ -139,7 +139,7 @@ const otherLayer = L.geoJSON([other], {
         });
     },
     onEachFeature
-}).addTo(map);
+});
 
 const baseLayers = {};
 const overlays = {
