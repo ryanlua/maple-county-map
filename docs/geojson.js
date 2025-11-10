@@ -170,7 +170,7 @@ var teams = {
             "properties": {
                 "name": "Fairfield Police Department",
                 "postalCode": "2016",
-                "icon": "fpd-marker.png"
+                "icon": "images/fpd-marker.png"
             }
         },
         {
@@ -185,7 +185,7 @@ var teams = {
             "properties": {
                 "name": "Maple County Fire & Rescue",
                 "postalCode": "2018",
-                "icon": "mcfr-marker.png"
+                "icon": "images/mcfr-marker.png"
             }
         },
         {
@@ -200,7 +200,7 @@ var teams = {
             "properties": {
                 "name": "Maple County Sheriffs Office",
                 "postalCode": "2015",
-                "icon": "mcso-marker.png"
+                "icon": "images/mcso-marker.png"
             }
         },
         {
@@ -215,7 +215,7 @@ var teams = {
             "properties": {
                 "name": "Oakland State Patrol",
                 "postalCode": "4007",
-                "icon": "osp-marker.png"
+                "icon": "images/osp-marker.png"
             }
         },
         {
@@ -230,7 +230,7 @@ var teams = {
             "properties": {
                 "name": "Maple County Public Works",
                 "postalCode": "1000",
-                "icon": "mcpw-marker.png"
+                "icon": "images/mcpw-marker.png"
             }
         },
         {
@@ -245,7 +245,7 @@ var teams = {
             "properties": {
                 "name": "Fairfield Fire Department",
                 "postalCode": "1005",
-                "icon": "ffd-marker.png"
+                "icon": "images/ffd-marker.png"
             }
         },
         {
@@ -260,7 +260,7 @@ var teams = {
             "properties": {
                 "name": "Maple County Medical Services",
                 "postalCode": "2007",
-                "icon": "mcms-marker.png"
+                "icon": "images/mcms-marker.png"
             }
         }
     ]
@@ -417,7 +417,7 @@ var other = {
             "properties": {
                 "name": "Landfill",
                 "postalCode": "4001",
-                "icon": "landfill-marker.png"
+                "icon": "images/landfill-marker.png"
             }
         },
         {
@@ -432,7 +432,7 @@ var other = {
             "properties": {
                 "name": "DMV",
                 "postalCode": "1006",
-                "icon": "dmv-marker.png"
+                "icon": "images/dmv-marker.png"
             }
         },
         {
@@ -447,7 +447,7 @@ var other = {
             "properties": {
                 "name": "Criminal Base",
                 "postalCode": "4000",
-                "icon": "criminal-base-marker.png"
+                "icon": "images/criminal-base-marker.png"
             }
         },
         {
@@ -462,7 +462,7 @@ var other = {
             "properties": {
                 "name": "TechnoCorps HQ",
                 "postalCode": "1004",
-                "icon": "techno-marker.png"
+                "icon": "images/techno-marker.png"
             }
         },
         {
@@ -477,7 +477,7 @@ var other = {
             "properties": {
                 "name": "TechnoStore",
                 "postalCode": "1011",
-                "icon": "techno-marker.png"
+                "icon": "images/techno-marker.png"
             }
         },
         {
