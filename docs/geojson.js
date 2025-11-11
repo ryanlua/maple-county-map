@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 var gasStations = {
     "type": "FeatureCollection",
     "features": [
