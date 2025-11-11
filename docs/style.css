@@ -65,6 +65,10 @@
     border-radius: 12px !important;
 }
 
+.leaflet-control-layers-separator {
+    border-color: var(--dark-gray);
+}
+
 /* Popup */
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {

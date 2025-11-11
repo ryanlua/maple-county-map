@@ -1,4 +1,4 @@
-import L, { Map, CRS, ImageOverlay, Marker, Icon, GeoJSON, Control } from 'leaflet';
+import { Map, CRS, ImageOverlay, Marker, Icon, GeoJSON, Control } from 'leaflet';
 
 const {
     teams,
@@ -23,14 +23,6 @@ const map = new Map('map', {
     zoom: 0,
     attributionControl: false,
     maxBounds: bounds
-});
-
-new ImageOverlay('images/map.avif', bounds).addTo(map);
-
-// DEBUG: Add a marker on right-click to help trace coordinates during authoring
-map.on('contextmenu', (event) => {
-    console.log(`user right-clicked on map coordinates: ${event.latlng.toString()}`);
-    new Marker(event.latlng).addTo(map);
 });
 
 const defaultIconOptions = {
@@ -161,18 +153,24 @@ const otherLayer = new GeoJSON([other], {
     onEachFeature
 });
 
-const baseLayers = {};
+const defaultLayer = new ImageOverlay('images/map.avif', bounds).addTo(map);
+
+// TODO: Enable default layer and add satellite layer
+const baseLayers = {
+    // "Default": defaultLayer
+};
+
 const overlays = {
-    Teams: teamsLayer,
-    Jobs: jobLayer,
-    'Gas Stations': gasStationLayer,
-    'Gun Stores': gunStoresLayer,
-    Hospitals: hospitalsLayer,
-    Banks: banksLayer,
-    Dealerships: dealershipsLayer,
-    Mechanics: mechanicsLayer,
-    Houses: housesLayer,
-    Other: otherLayer
+    "Teams": teamsLayer,
+    "Jobs": jobLayer,
+    "Gas Stations": gasStationLayer,
+    "Gun Stores": gunStoresLayer,
+    "Hospitals": hospitalsLayer,
+    "Banks": banksLayer,
+    "Dealerships": dealershipsLayer,
+    "Mechanics": mechanicsLayer,
+    "Houses": housesLayer,
+    "Other": otherLayer
 };
 
 new Control.Layers(baseLayers, overlays).addTo(map);
