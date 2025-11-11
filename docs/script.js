@@ -152,6 +152,7 @@ const otherLayer = new GeoJSON(other, {
     onEachFeature
 });
 
+// eslint-disable-next-line no-unused-vars
 const defaultLayer = new ImageOverlay('images/map.avif', bounds).addTo(map);
 
 // TODO: Enable default layer and add satellite layer
