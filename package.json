@@ -1,0 +1,25 @@
+{
+  "name": "maple-county-map",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Interactive map for Maple County on Roblox",
+  "homepage": "https://github.com/RyanLua/Maple-County-Map#readme",
+  "bugs": {
+    "url": "https://github.com/RyanLua/Maple-County-Map/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanLua/Maple-County-Map.git"
+  },
+  "license": "CC-BY-SA-4.0",
+  "author": "Ryan Luu <ryan.luu@ryanluu.dev>",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
+  }
+}

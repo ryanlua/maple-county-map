@@ -1,7 +1,22 @@
-var bounds = [[0, 0], [1024, 1024]]; // TODO: Fix with correct bounds
+import { Map, CRS, ImageOverlay, Marker, Icon, GeoJSON, Control } from 'leaflet';
 
-const map = L.map('map', {
-    crs: L.CRS.Simple,
+const {
+    teams,
+    gasStations,
+    gunStores,
+    jobs,
+    hospitals,
+    banks,
+    dealerships,
+    mechanics,
+    houses,
+    other
+} = window;
+
+const bounds = [[0, 0], [1024, 1024]];
+
+const map = new Map('map', {
+    crs: CRS.Simple,
     minZoom: -1,
     maxZoom: 4,
     center: [550, 575],
@@ -10,149 +25,152 @@ const map = L.map('map', {
     maxBounds: bounds
 });
 
-const image = L.imageOverlay('images/map.avif', bounds).addTo(map);
+// eslint-disable-next-line no-unused-vars
+const defaultLayer = new ImageOverlay('images/map.avif', bounds).addTo(map);
 
-// DEBUG: Add a marker on right-click
-map.on("contextmenu", function (event) {
-    console.log("user right-clicked on map coordinates: " + event.latlng.toString());
-    L.marker(event.latlng).addTo(map);
+const createMarkerIcon = (iconUrl) => new Icon({
+    iconUrl,
+    iconSize: [38, 64],
+    iconAnchor: [19, 62],
+    popupAnchor: [0, -62],
 });
 
-function onEachFeature(feature, layer) {
-    if (feature.properties && feature.properties.name) {
-        popupContent = feature.properties.name;
-        layer.bindPopup(popupContent);
+function onEachFeature(feature = {}, layer) {
+    const properties = feature.properties || {};
+    const { name, icon: iconUrl, buyable, postalCode } = properties;
+
+    if (iconUrl) {
+        layer.setIcon(createMarkerIcon(iconUrl));
+    } else if (buyable) {
+        layer.setIcon(createMarkerIcon('images/house-marker.png'));
     }
-    if (feature.properties && feature.properties.icon) {
-        icon = new MarkerIcon({ iconUrl: feature.properties.icon });
-        layer.setIcon(icon);
+
+    let popupContent = '';
+
+    if (name) {
+        popupContent = name;
     }
-    if (feature.properties && feature.properties.buyable) {
-        icon = new MarkerIcon({ iconUrl: 'images/house-marker.png' });
-        layer.setIcon(icon);
-    }
-    if (feature.properties && feature.properties.postalCode) {
-        postalCode = feature.properties.postalCode;
-        popupContent += ', ' + feature.properties.postalCode;
-        layer.bindPopup(popupContent);
+
+    if (postalCode) {
+        popupContent = popupContent ? `${popupContent}, ${postalCode}` : postalCode;
         layer.bindTooltip(postalCode);
+    }
+
+    if (popupContent) {
+        layer.bindPopup(popupContent);
     }
 }
 
-const MarkerIcon = L.Icon.extend({
-    options: {
-        iconSize: [38, 64],
-        iconAnchor: [19, 62],
-        popupAnchor: [0, -62]
-    }
-});
-
-const teamsLayer = L.geoJSON([teams], {
+const teamsLayer = new GeoJSON(teams, {
     onEachFeature
 }).addTo(map);
 
-const gasStationLayer = L.geoJSON([gasStations], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/gas-station-marker.png' }),
+const gasStationLayer = new GeoJSON(gasStations, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/gas-station-marker.png'),
             title: 'Gas Station'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const gunStoresLayer = L.geoJSON([gunStores], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/gun-store-marker.png' }),
+const gunStoresLayer = new GeoJSON(gunStores, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/gun-store-marker.png'),
             title: 'Gun Store'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const jobLayer = L.geoJSON([jobs], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/job-marker.png' }),
+const jobLayer = new GeoJSON(jobs, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/job-marker.png'),
             title: 'Job'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const hospitalsLayer = L.geoJSON([hospitals], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/hospital-marker.png' }),
+const hospitalsLayer = new GeoJSON(hospitals, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/hospital-marker.png'),
             title: 'Hospital'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const banksLayer = L.geoJSON([banks], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/bank-marker.png' }),
+const banksLayer = new GeoJSON(banks, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/bank-marker.png'),
             title: 'Bank'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const mechanicsLayer = L.geoJSON([mechanics], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/mechanics-marker.png' }),
+const mechanicsLayer = new GeoJSON(mechanics, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/mechanics-marker.png'),
             title: 'Mechanics'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const dealershipsLayer = L.geoJSON([dealerships], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/dealership-marker.png' }),
+const dealershipsLayer = new GeoJSON(dealerships, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/dealership-marker.png'),
             title: 'Dealership'
         });
     },
     onEachFeature
 }).addTo(map);
 
-const housesLayer = L.geoJSON([houses], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/empty-marker.png' }),
+const housesLayer = new GeoJSON(houses, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/empty-marker.png'),
             title: 'House'
         });
     },
     onEachFeature
 });
 
-const otherLayer = L.geoJSON([other], {
-    pointToLayer(feature, latlng) {
-        return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/orange-marker.png' }),
+const otherLayer = new GeoJSON(other, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return new Marker(latlng, {
+            icon: createMarkerIcon('images/orange-marker.png'),
             title: 'Other'
         });
     },
     onEachFeature
 });
 
-const baseLayers = {};
-const overlays = {
-    'Teams': teamsLayer,
-    'Jobs': jobLayer,
-    'Gas Stations': gasStationLayer,
-    'Gun Stores': gunStoresLayer,
-    'Hospitals': hospitalsLayer,
-    'Banks': banksLayer,
-    'Dealerships': dealershipsLayer,
-    'Mechanics': mechanicsLayer,
-    'Houses': housesLayer,
-    'Other': otherLayer,
+// TODO: Enable default layer and add satellite layer
+const baseLayers = {
+    // "Default": defaultLayer
 };
 
-L.control.layers(baseLayers, overlays).addTo(map);
+const overlays = {
+    "Teams": teamsLayer,
+    "Jobs": jobLayer,
+    "Gas Stations": gasStationLayer,
+    "Gun Stores": gunStoresLayer,
+    "Hospitals": hospitalsLayer,
+    "Banks": banksLayer,
+    "Dealerships": dealershipsLayer,
+    "Mechanics": mechanicsLayer,
+    "Houses": housesLayer,
+    "Other": otherLayer
+};
+
+new Control.Layers(baseLayers, overlays).addTo(map);
