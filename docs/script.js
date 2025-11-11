@@ -59,12 +59,12 @@ function onEachFeature(feature = {}, layer) {
     }
 }
 
-const teamsLayer = new GeoJSON([teams], {
+const teamsLayer = new GeoJSON(teams, {
     onEachFeature
 }).addTo(map);
 
-const gasStationLayer = new GeoJSON([gasStations], {
-    pointToLayer(feature, latlng) {
+const gasStationLayer = new GeoJSON(gasStations, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/gas-station-marker.png'),
             title: 'Gas Station'
@@ -73,8 +73,8 @@ const gasStationLayer = new GeoJSON([gasStations], {
     onEachFeature
 }).addTo(map);
 
-const gunStoresLayer = new GeoJSON([gunStores], {
-    pointToLayer(feature, latlng) {
+const gunStoresLayer = new GeoJSON(gunStores, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/gun-store-marker.png'),
             title: 'Gun Store'
@@ -83,8 +83,8 @@ const gunStoresLayer = new GeoJSON([gunStores], {
     onEachFeature
 }).addTo(map);
 
-const jobLayer = new GeoJSON([jobs], {
-    pointToLayer(feature, latlng) {
+const jobLayer = new GeoJSON(jobs, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/job-marker.png'),
             title: 'Job'
@@ -93,8 +93,8 @@ const jobLayer = new GeoJSON([jobs], {
     onEachFeature
 }).addTo(map);
 
-const hospitalsLayer = new GeoJSON([hospitals], {
-    pointToLayer(feature, latlng) {
+const hospitalsLayer = new GeoJSON(hospitals, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/hospital-marker.png'),
             title: 'Hospital'
@@ -103,8 +103,8 @@ const hospitalsLayer = new GeoJSON([hospitals], {
     onEachFeature
 }).addTo(map);
 
-const banksLayer = new GeoJSON([banks], {
-    pointToLayer(feature, latlng) {
+const banksLayer = new GeoJSON(banks, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/bank-marker.png'),
             title: 'Bank'
@@ -113,8 +113,8 @@ const banksLayer = new GeoJSON([banks], {
     onEachFeature
 }).addTo(map);
 
-const mechanicsLayer = new GeoJSON([mechanics], {
-    pointToLayer(feature, latlng) {
+const mechanicsLayer = new GeoJSON(mechanics, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/mechanics-marker.png'),
             title: 'Mechanics'
@@ -123,8 +123,8 @@ const mechanicsLayer = new GeoJSON([mechanics], {
     onEachFeature
 }).addTo(map);
 
-const dealershipsLayer = new GeoJSON([dealerships], {
-    pointToLayer(feature, latlng) {
+const dealershipsLayer = new GeoJSON(dealerships, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/dealership-marker.png'),
             title: 'Dealership'
@@ -133,8 +133,8 @@ const dealershipsLayer = new GeoJSON([dealerships], {
     onEachFeature
 }).addTo(map);
 
-const housesLayer = new GeoJSON([houses], {
-    pointToLayer(feature, latlng) {
+const housesLayer = new GeoJSON(houses, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/empty-marker.png'),
             title: 'House'
@@ -143,8 +143,8 @@ const housesLayer = new GeoJSON([houses], {
     onEachFeature
 });
 
-const otherLayer = new GeoJSON([other], {
-    pointToLayer(feature, latlng) {
+const otherLayer = new GeoJSON(other, {
+    pointToLayer(geoJsonPoint, latlng) {
         return new Marker(latlng, {
             icon: createMarkerIcon('images/orange-marker.png'),
             title: 'Other'
