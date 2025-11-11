@@ -13,7 +13,7 @@ const {
     other
 } = window;
 
-const bounds = [[0, 0], [1024, 1024]]; // TODO: Fix with correct bounds
+const bounds = [[0, 0], [1024, 1024]];
 
 const map = new Map('map', {
     crs: CRS.Simple,
@@ -25,13 +25,12 @@ const map = new Map('map', {
     maxBounds: bounds
 });
 
-const defaultIconOptions = {
+const createMarkerIcon = (iconUrl) => new Icon({
+    iconUrl,
     iconSize: [38, 64],
     iconAnchor: [19, 62],
-    popupAnchor: [0, -62]
-};
-
-const createMarkerIcon = (iconUrl) => new Icon({ ...defaultIconOptions, iconUrl });
+    popupAnchor: [0, -62],
+});
 
 function onEachFeature(feature = {}, layer) {
     const properties = feature.properties || {};
