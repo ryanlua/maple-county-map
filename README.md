@@ -5,3 +5,7 @@
 Interactive map for [Maple County on Roblox](https://www.roblox.com/games/8416011646).
 
 ![Map of Maple County](docs/images/map.avif)
+
+## Licence
+
+Available under [Creative Commons Attribution Share Alike 4.0 International](LICENSE.md). Assets from [Maple County | Official Wiki](https://maplecounty.fandom.com/).
