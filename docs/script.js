@@ -25,6 +25,9 @@ const map = new Map('map', {
     maxBounds: bounds
 });
 
+// eslint-disable-next-line no-unused-vars
+const defaultLayer = new ImageOverlay('images/map.avif', bounds).addTo(map);
+
 const createMarkerIcon = (iconUrl) => new Icon({
     iconUrl,
     iconSize: [38, 64],
@@ -151,9 +154,6 @@ const otherLayer = new GeoJSON(other, {
     },
     onEachFeature
 });
-
-// eslint-disable-next-line no-unused-vars
-const defaultLayer = new ImageOverlay('images/map.avif', bounds).addTo(map);
 
 // TODO: Enable default layer and add satellite layer
 const baseLayers = {
