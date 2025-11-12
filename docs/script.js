@@ -14,12 +14,6 @@ const map = L.map('map', {
 // eslint-disable-next-line no-unused-vars
 const defaultLayer = L.imageOverlay('images/map.avif', bounds).addTo(map);
 
-// DEBUG: Add a marker on right-click
-map.on("contextmenu", function (event) {
-    console.log("user right-clicked on map coordinates: " + event.latlng.toString());
-    L.marker(event.latlng).addTo(map);
-});
-
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.name) {
         popupContent = feature.properties.name;
