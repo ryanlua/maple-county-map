@@ -153,7 +153,7 @@ const otherLayer = new GeoJSON(other, {
         });
     },
     onEachFeature
-});
+}).addTo(map);
 
 // TODO: Enable default layer and add satellite layer
 const baseLayers = {

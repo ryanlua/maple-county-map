@@ -404,84 +404,9 @@ var mechanics = {
     ]
 };
 
-var other = {
+var misc = {
     "type": "FeatureCollection",
     "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    178,
-                    617
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Landfill",
-                "postalCode": "4001",
-                "icon": "images/landfill-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    710,
-                    220
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "DMV",
-                "postalCode": "1006",
-                "icon": "images/dmv-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    230,
-                    485
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Criminal Base",
-                "postalCode": "4000",
-                "icon": "images/criminal-base-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    555,
-                    203
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "TechnoCorps HQ",
-                "postalCode": "1004",
-                "icon": "images/techno-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    678,
-                    241
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "TechnoStore",
-                "postalCode": "1011",
-                "icon": "images/techno-marker.png"
-            }
-        },
         {
             "geometry": {
                 "type": "Point",
@@ -578,6 +503,87 @@ var other = {
             "properties": {
                 "name": "British International Development Bank",
                 "postalCode": "1009"
+            }
+        },
+    ]
+};
+
+var other = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    178,
+                    617
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Landfill",
+                "postalCode": "4001",
+                "icon": "images/landfill-marker.png"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    710,
+                    220
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "DMV",
+                "postalCode": "1006",
+                "icon": "images/dmv-marker.png"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    230,
+                    485
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Criminal Base",
+                "postalCode": "4000",
+                "icon": "images/criminal-base-marker.png"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    555,
+                    203
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "TechnoCorps HQ",
+                "postalCode": "1004",
+                "icon": "images/techno-marker.png"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    678,
+                    241
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "TechnoStore",
+                "postalCode": "1011",
+                "icon": "images/techno-marker.png"
             }
         },
     ]
