@@ -167,6 +167,7 @@ const drawnItems = new L.FeatureGroup();
 map.addLayer(drawnItems);
 
 const drawControl = new L.Control.Draw({
+    position: 'bottomleft',
     edit: {
         featureGroup: drawnItems
     },
