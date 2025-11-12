@@ -137,3 +137,7 @@
 .leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove.leaflet-disabled::after {
     background-position: -352px;
 }
+
+.leaflet-touch .leaflet-draw-actions {
+    left: 48px;
+}
