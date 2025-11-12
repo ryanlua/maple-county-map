@@ -143,16 +143,16 @@ const otherLayer = L.geoJSON(other, {
 
 const baseLayers = {};
 const overlays = {
-    'Teams': teamsLayer,
-    'Jobs': jobLayer,
-    'Gas Stations': gasStationLayer,
-    'Gun Stores': gunStoresLayer,
-    'Hospitals': hospitalsLayer,
-    'Banks': banksLayer,
-    'Dealerships': dealershipsLayer,
-    'Mechanics': mechanicsLayer,
-    'Houses': housesLayer,
-    'Other': otherLayer,
+    "Teams": teamsLayer,
+    "Jobs": jobLayer,
+    "Gas Stations": gasStationLayer,
+    "Gun Stores": gunStoresLayer,
+    "Hospitals": hospitalsLayer,
+    "Banks": banksLayer,
+    "Dealerships": dealershipsLayer,
+    "Mechanics": mechanicsLayer,
+    "Houses": housesLayer,
+    "Other": otherLayer
 };
 
 L.control.layers(baseLayers, overlays).addTo(map);
