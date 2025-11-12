@@ -161,3 +161,43 @@ const overlays = {
 };
 
 L.control.layers(baseLayers, overlays).addTo(map);
+
+// Leaflet Draw
+const drawnItems = new L.FeatureGroup();
+map.addLayer(drawnItems);
+
+const drawControl = new L.Control.Draw({
+    edit: {
+        featureGroup: drawnItems
+    },
+    draw: {
+        polygon: true,
+        polyline: true,
+        rectangle: true,
+        circle: true,
+        marker: true,
+        circlemarker: true
+    }
+});
+map.addControl(drawControl);
+
+// Handle draw events
+map.on(L.Draw.Event.CREATED, function (event) {
+    const layer = event.layer;
+    drawnItems.addLayer(layer);
+    console.log('Shape created:', layer.toGeoJSON());
+});
+
+map.on(L.Draw.Event.EDITED, function (event) {
+    const layers = event.layers;
+    layers.eachLayer(function (layer) {
+        console.log('Shape edited:', layer.toGeoJSON());
+    });
+});
+
+map.on(L.Draw.Event.DELETED, function (event) {
+    const layers = event.layers;
+    layers.eachLayer(function (layer) {
+        console.log('Shape deleted:', layer.toGeoJSON());
+    });
+});
