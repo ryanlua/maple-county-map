@@ -10,7 +10,8 @@ const map = L.map('map', {
     maxBounds: bounds
 });
 
-const image = L.imageOverlay('images/map.avif', bounds).addTo(map);
+// eslint-disable-next-line no-unused-vars
+const defaultLayer = L.imageOverlay('images/map.avif', bounds).addTo(map);
 
 // DEBUG: Add a marker on right-click
 map.on("contextmenu", function (event) {
@@ -141,7 +142,10 @@ const otherLayer = L.geoJSON(other, {
     onEachFeature
 }).addTo(map);
 
-const baseLayers = {};
+const baseLayers = {
+    // "Default": defaultLayer
+};
+
 const overlays = {
     "Teams": teamsLayer,
     "Jobs": jobLayer,
