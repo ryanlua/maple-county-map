@@ -26,7 +26,6 @@
 
 .leaflet-touch .leaflet-bar a {
     border-radius: 50% !important;
-
 }
 
 .leaflet-bar a:hover,
@@ -88,35 +87,53 @@
 
 /* Leaflet Draw */
 .leaflet-draw-toolbar a {
+    position: relative;
+    background-image: none;
+}
+
+.leaflet-draw-toolbar a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-size: 440px 44px;
+    background-image: url("https://unpkg.com/leaflet-draw@1.0.4/dist/images/spritesheet.svg");
+    filter: brightness(0) invert(100%);
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polygon {
-    background-position: -43px -1px;
+.leaflet-draw-toolbar a.leaflet-disabled::after {
+    filter: brightness(0) invert(35%);
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-rectangle {
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polyline::after {
+    background-position: 0;
+}
+
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polygon::after {
+    background-position: -43px;
+}
+
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-rectangle::after {
     background-position: -88px -1px;
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circle {
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circle::after {
     background-position: -132px;
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-marker {
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-marker::after {
     background-position: -176px -1px;
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circlemarker {
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circlemarker::after {
     background-position: -396px;
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-edit,
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-edit.leaflet-disabled {
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-edit::after,
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-edit.leaflet-disabled::after {
     background-position: -307px -1px;
 }
 
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove,
-.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove.leaflet-disabled {
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove::after,
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-edit-remove.leaflet-disabled::after {
     background-position: -352px;
 }
