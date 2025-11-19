@@ -10,13 +10,44 @@
     <meta name="keywords" content="experience,game,guide,locations,map,maple county,place,roblox" />
     <title>Maple County Map</title>
 
+    <link rel="canonical" href="https://maplecounty.us/">
+    <meta name="robots" content="all">
+
+    <meta property="og:title" content="Interactive Map for Maple County on Roblox" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Interactive map for Maple County on Roblox with locations for robberies, teams, jobs, and more." />
+    <meta property="og:url" content="https://maplecounty.us/">
+    <meta property="og:site_name" content="Maple County Map">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://maplecounty.us/map.png" />
+    <meta property="og:image:secure_url" content="https://maplecounty.us/map.png" />
+    <meta property="og:image:alt" content="Preview of Maple County interactive map" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Interactive Map for Maple County on Roblox">
+    <meta name="twitter:description"
+        content="Interactive map for Maple County on Roblox with locations for robberies, teams, jobs, and more.">
+    <meta name="twitter:image" content="https://maplecounty.us/map.png">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Maple County Map",
+            "url": "https://maplecounty.us/",
+            "description": "Interactive map for Maple County on Roblox with locations for robberies, teams, jobs, and more."
+        }
+    </script>
+
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="192x192 180x180 48x48 32x32 24x24 16x16">
 
+    <link rel="preconnect" href="https://unpkg.com" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
     <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -32,6 +63,8 @@
             height: 100%;
         }
     </style>
+
+</head>
 
 <body>
     <div id='map'></div>
