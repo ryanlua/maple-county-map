@@ -12,7 +12,7 @@ const map = L.map('map', {
 });
 
 L.control.attribution({ prefix: false }).addTo(map).addAttribution(
-    'Open source on <a href="https://github.com/RyanLua/Maple-County-Map" target="_blank">GitHub</a> | ' +
+    '<a href="https://github.com/RyanLua/Maple-County-Map" target="_blank">GitHub</a> | ' +
     'Images from <a href="https://maplecounty.fandom.com/" target="_blank">Maple County Wiki</a> available under <a href="https://www.fandom.com/licensing" target="_blank">CC-BY-SA</a>'
 );
 
