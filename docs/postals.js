@@ -1,4 +1,6 @@
-var 2013 = {
+/* eslint-disable no-unused-vars */
+
+var postal2013 = {
     "type": "Feature",
     "geometry": {
         "type": "MultiPolygon",
