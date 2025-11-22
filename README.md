@@ -1,6 +1,6 @@
 # Maple County Map
 
-[![ESLint](https://github.com/RyanLua/Maple-County-Map/actions/workflows/eslint.yml/badge.svg)](https://github.com/RyanLua/Maple-County-Map/actions/workflows/eslint.yml) [![pages-build-deployment](https://github.com/RyanLua/Maple-County-Map/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RyanLua/Maple-County-Map/actions/workflows/pages/pages-build-deployment)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/RyanLua/Maple-County-Map)
 
 Interactive map for [Maple County on Roblox](https://www.roblox.com/games/8416011646).
 
