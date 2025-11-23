@@ -2,7 +2,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/RyanLua/Maple-County-Map)
 
-Interactive map for [Maple County on Roblox](https://www.roblox.com/games/8416011646).
+Interactive map for [Maple County on Roblox](https://www.roblox.com/games/8416011646). View the map at [maplecounty.us](https://maplecounty.us/).
 
 ![Map of Maple County](docs/map.png)
 
