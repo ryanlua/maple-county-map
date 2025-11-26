@@ -48,6 +48,14 @@ const MarkerIcon = L.Icon.extend({
     }
 });
 
+const PointIcon = L.Icon.extend({
+    options: {
+        iconSize: [32, 32],
+        iconAnchor: [16, 16],
+        popupAnchor: [0, 16]
+    }
+});
+
 const teamsLayer = L.geoJSON(teams, {
     onEachFeature
 }).addTo(map);
@@ -142,6 +150,16 @@ const otherLayer = L.geoJSON(other, {
     onEachFeature
 }).addTo(map);
 
+const atmLayer = L.geoJSON(atms, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: new PointIcon({ iconUrl: 'images/atm-dot.png' }),
+            title: 'ATM'
+        });
+    },
+    onEachFeature
+});
+
 const baseLayers = {
     // "Default": defaultLayer
 };
@@ -155,6 +173,7 @@ const overlays = {
     "Banks": banksLayer,
     "Dealerships": dealershipsLayer,
     "Mechanics": mechanicsLayer,
+    "ATMs": atmLayer,
     "Houses": housesLayer,
     "Other": otherLayer
 };

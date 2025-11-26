@@ -1254,3 +1254,101 @@ var houses = {
         }
     ]
 };
+
+var atms = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    769,
+                    880
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "5015"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    706,
+                    243
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "1010"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    656,
+                    367
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "2000"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    741,
+                    653
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "2014"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    892,
+                    843
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "5010"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    674,
+                    279
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "1013"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    596,
+                    216
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "postalCode": "1004"
+            }
+        },
+    ]
+};
+
