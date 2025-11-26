@@ -125,7 +125,7 @@ const dealershipsLayer = L.geoJSON(dealerships, {
 const housesLayer = L.geoJSON(houses, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/empty-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/yellow-marker.png' }),
             title: 'House'
         });
     },
