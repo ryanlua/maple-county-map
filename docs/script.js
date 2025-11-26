@@ -20,23 +20,25 @@ L.control.attribution({ prefix: false }).addTo(map).addAttribution(
 const defaultLayer = L.imageOverlay('images/map.avif', bounds).addTo(map);
 
 function onEachFeature(feature, layer) {
-    if (feature.properties && feature.properties.name) {
+    if (feature.properties.name) {
         popupContent = feature.properties.name;
         layer.bindPopup(popupContent);
     }
-    if (feature.properties && feature.properties.icon) {
+    if (feature.properties.icon) {
         icon = new MarkerIcon({ iconUrl: feature.properties.icon });
         layer.setIcon(icon);
     }
-    if (feature.properties && feature.properties.buyable) {
+    if (feature.properties.buyable) {
         icon = new MarkerIcon({ iconUrl: 'images/house-marker.png' });
         layer.setIcon(icon);
     }
-    if (feature.properties && feature.properties.postalCode) {
+    if (feature.properties.postalCode) {
         postalCode = feature.properties.postalCode;
-        popupContent += ', ' + feature.properties.postalCode;
-        layer.bindPopup(popupContent);
         layer.bindTooltip(postalCode);
+        if (feature.properties.name) {
+            popupContent += ', ' + feature.properties.postalCode;
+            layer.bindPopup(popupContent);
+        }
     }
 }
 
@@ -52,7 +54,7 @@ const PointIcon = L.Icon.extend({
     options: {
         iconSize: [32, 32],
         iconAnchor: [16, 16],
-        popupAnchor: [0, 16]
+        popupAnchor: [0, -16]
     }
 });
 
