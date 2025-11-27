@@ -6,11 +6,6 @@
     --dark-gray: #1e1e1e;
 }
 
-/* Background */
-.leaflet-container {
-    background: #a3cdfe;
-}
-
 /* Zoom Control */
 .leaflet-bar a {
     background-color: var(--medium-gray);
