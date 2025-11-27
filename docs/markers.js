@@ -603,8 +603,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "Fairfield Apartments",
-                "postalCode": "1008",
-                "buyable": true
+                "postalCode": "1008"
             }
         },
         {
@@ -618,8 +617,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "12 Archer Court",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -633,8 +631,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "15 Archer Court",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -648,8 +645,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "14 Archer Court",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -663,8 +659,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "13 Archer Court",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -678,8 +673,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "11 Archer Court",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -693,8 +687,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "15 Archer Court",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -708,8 +701,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "17 Archer Road",
-                "postalCode": "3006",
-                "buyable": false
+                "postalCode": "3006"
             }
         },
         {
@@ -723,8 +715,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "19 Archer Road",
-                "postalCode": "3006",
-                "buyable": true
+                "postalCode": "3006"
             }
         },
         {
@@ -738,8 +729,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "16 Archer Road",
-                "postalCode": "3006",
-                "buyable": false
+                "postalCode": "3006"
             }
         },
         {
@@ -753,8 +743,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "18 Archer Road",
-                "postalCode": "3006",
-                "buyable": false
+                "postalCode": "3006"
             }
         },
         {
@@ -768,8 +757,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "20 Archer Road",
-                "postalCode": "3006",
-                "buyable": true
+                "postalCode": "3006"
             }
         },
         {
@@ -783,8 +771,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "22 Pinewood Ave",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -798,8 +785,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "21 Pinewood Ave",
-                "postalCode": "3005",
-                "buyable": false
+                "postalCode": "3005"
             }
         },
         {
@@ -813,8 +799,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "10 Highland Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -828,8 +813,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "11 Highland Street",
-                "postalCode": "2006",
-                "buyable": true
+                "postalCode": "2006"
             }
         },
         {
@@ -843,8 +827,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "12 Highland Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -858,8 +841,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "13 Highland Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -873,8 +855,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "14 Highland Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -888,8 +869,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "21 Oxford Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -903,8 +883,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "23 Oxford Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -918,8 +897,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "24 Oxford Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -933,8 +911,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "26 Oxford Street",
-                "postalCode": "2006",
-                "buyable": false
+                "postalCode": "2006"
             }
         },
         {
@@ -948,8 +925,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "28 Oxford Street",
-                "postalCode": "2006",
-                "buyable": true
+                "postalCode": "2006"
             }
         },
         {
@@ -963,8 +939,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "20 Oxford Street",
-                "postalCode": "2005",
-                "buyable": true
+                "postalCode": "2005"
             }
         },
         {
@@ -978,8 +953,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "22 Oxford Street",
-                "postalCode": "2005",
-                "buyable": true
+                "postalCode": "2005"
             }
         },
         {
@@ -993,8 +967,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "25 Oxford Street",
-                "postalCode": "2009",
-                "buyable": false
+                "postalCode": "2009"
             }
         },
         {
@@ -1008,8 +981,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "27 Oxford Street",
-                "postalCode": "2009",
-                "buyable": true
+                "postalCode": "2009"
             }
         },
         {
@@ -1023,8 +995,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "30 Grove Street",
-                "postalCode": "2005",
-                "buyable": false
+                "postalCode": "2005"
             }
         },
         {
@@ -1038,8 +1009,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "31 Grove Street",
-                "postalCode": "2005",
-                "buyable": false
+                "postalCode": "2005"
             }
         },
         {
@@ -1053,8 +1023,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "32 Grove Street",
-                "postalCode": "2009",
-                "buyable": false
+                "postalCode": "2009"
             }
         },
         {
@@ -1068,8 +1037,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "33 Grove Street",
-                "postalCode": "2009",
-                "buyable": true
+                "postalCode": "2009"
             }
         },
         {
@@ -1083,8 +1051,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "21 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1098,8 +1065,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "17 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1113,8 +1079,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "23 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1128,8 +1093,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "18 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1143,8 +1107,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "15 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1158,8 +1121,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "13 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1173,8 +1135,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "16 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1188,8 +1149,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "14 Crazy Court",
-                "postalCode": "5000",
-                "buyable": true
+                "postalCode": "5000"
             }
         },
         {
@@ -1203,8 +1163,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "12 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1218,8 +1177,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "1 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1233,8 +1191,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "19 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         },
         {
@@ -1248,8 +1205,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "20 Crazy Court",
-                "postalCode": "5000",
-                "buyable": false
+                "postalCode": "5000"
             }
         }
     ]
