@@ -32,7 +32,7 @@ function onEachFeature(feature, layer) {
     if (feature.properties.name) {
         let popupContent = feature.properties.name;
         if (feature.properties.postalCode) {
-        popupContent += ', ' + feature.properties.postalCode;
+            popupContent += ', ' + feature.properties.postalCode;
         }
         layer.bindPopup(popupContent);
     }
@@ -170,6 +170,15 @@ const vanLayer = L.geoJSON(vans, {
     onEachFeature
 });
 
+const tunnelsLayer = L.geoJSON(tunnels, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: new PointIcon({ iconUrl: 'images/tunnel-dot.png' }),
+            title: 'Tunnel'
+        });
+    },
+    onEachFeature
+});
 
 const baseLayers = {
     // "Default": defaultLayer
@@ -186,6 +195,7 @@ const overlays = {
     "Mechanics": mechanicsLayer,
     "ATMs": atmLayer,
     "Van Man": vanLayer,
+    "Tunnels": tunnelsLayer,
     "Houses": housesCluster,
     "Other": otherLayer
 };

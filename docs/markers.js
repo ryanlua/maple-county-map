@@ -1454,3 +1454,29 @@ var vans = {
         }
     ]
 };
+
+var tunnels = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    403,
+                    278
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    294,
+                    637
+                ]
+            },
+            "type": "Feature"
+        }
+    ]
+};
