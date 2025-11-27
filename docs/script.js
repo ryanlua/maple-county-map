@@ -36,6 +36,10 @@ function onEachFeature(feature, layer) {
         }
         layer.bindPopup(popupContent);
     }
+
+    if (layer.options.title) {
+        layer.bindTooltip(layer.options.title);
+    }
 }
 
 const MarkerIcon = L.Icon.extend({
@@ -55,6 +59,11 @@ const PointIcon = L.Icon.extend({
 });
 
 const teamsLayer = L.geoJSON(teams, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            title: 'Team'
+        });
+    },
     onEachFeature
 }).addTo(map);
 
