@@ -20,16 +20,20 @@ L.control.attribution({ prefix: false }).addTo(map).addAttribution(
 const defaultLayer = L.imageOverlay('images/map.avif', bounds).addTo(map);
 
 function onEachFeature(feature, layer) {
-    if (feature.properties.name) {
-        popupContent = feature.properties.name;
-        layer.bindPopup(popupContent);
+    if (!feature.properties) {
+        return;
     }
+
     if (feature.properties.icon) {
-        icon = new MarkerIcon({ iconUrl: feature.properties.icon });
+        const icon = new MarkerIcon({ iconUrl: feature.properties.icon });
         layer.setIcon(icon);
     }
-    if (feature.properties.postalCode && feature.properties.name) {
+
+    if (feature.properties.name) {
+        let popupContent = feature.properties.name;
+        if (feature.properties.postalCode) {
         popupContent += ', ' + feature.properties.postalCode;
+        }
         layer.bindPopup(popupContent);
     }
 }
