@@ -1340,13 +1340,13 @@ var atms = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    596,
-                    216
+                    507,
+                    220
                 ]
             },
             "type": "Feature",
             "properties": {
-                "postalCode": "1004"
+                "postalCode": "1003"
             }
         },
     ]
