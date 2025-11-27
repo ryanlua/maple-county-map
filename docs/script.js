@@ -166,7 +166,7 @@ const vanLayer = L.geoJSON(vans, {
         });
     },
     onEachFeature
-}).addTo(map);
+});
 
 
 const baseLayers = {
