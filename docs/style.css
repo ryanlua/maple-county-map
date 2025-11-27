@@ -94,7 +94,32 @@ body {
     color: #fff;
 }
 
-/* Leaflet Draw */
+/* Marker Cluster */
+.marker-cluster {
+    background-color: #b98300;
+    border-radius: 20px;
+}
+
+.marker-cluster div {
+    background-color: #ffb400;
+}
+
+.marker-cluster div {
+    width: 36px;
+    height: 36px;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-align: center;
+    border-radius: 19px;
+}
+
+.marker-cluster span {
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Draw */
 .leaflet-draw-toolbar a {
     position: relative;
     background-image: none;

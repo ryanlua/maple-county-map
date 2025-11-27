@@ -33,8 +33,8 @@ function onEachFeature(feature, layer) {
         layer.setIcon(icon);
     }
     if (feature.properties.postalCode && feature.properties.name) {
-            popupContent += ', ' + feature.properties.postalCode;
-            layer.bindPopup(popupContent);
+        popupContent += ', ' + feature.properties.postalCode;
+        layer.bindPopup(popupContent);
     }
 }
 
@@ -128,6 +128,7 @@ const dealershipsLayer = L.geoJSON(dealerships, {
     onEachFeature
 }).addTo(map);
 
+const housesCluster = L.markerClusterGroup();
 const housesLayer = L.geoJSON(houses, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
@@ -137,6 +138,7 @@ const housesLayer = L.geoJSON(houses, {
     },
     onEachFeature
 });
+housesCluster.addLayer(housesLayer);
 
 const otherLayer = L.geoJSON(other, {
     pointToLayer(geoJsonPoint, latlng) {
@@ -184,7 +186,7 @@ const overlays = {
     "Mechanics": mechanicsLayer,
     "ATMs": atmLayer,
     "Van Man": vanLayer,
-    "Houses": housesLayer,
+    "Houses": housesCluster,
     "Other": otherLayer
 };
 
