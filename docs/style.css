@@ -6,6 +6,20 @@
     --dark-gray: #1e1e1e;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+.leaflet-container {
+    background: #a3cdfe;
+}
+
 /* Zoom Control */
 .leaflet-bar a {
     background-color: var(--medium-gray);
