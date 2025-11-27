@@ -1339,3 +1339,162 @@ var atms = {
     ]
 };
 
+var vans = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    507,
+                    204
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Gun Store",
+                "postalCode": "1003"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    403,
+                    262
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Docks",
+                "postalCode": "1000"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    392,
+                    294
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Cliffside",
+                "postalCode": "3001"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    176,
+                    610
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Landfill",
+                "postalCode": "4001"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    431,
+                    724
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Farm",
+                "postalCode": "4004"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    443,
+                    769
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Farm",
+                "postalCode": "4004"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    691,
+                    811
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Hanover Parking Lot",
+                "postalCode": "5002"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    831,
+                    849
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Katie's Flower Center",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    727,
+                    652
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "County Gas Station",
+                "postalCode": "2014"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    850,
+                    549
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "County Cliffside",
+                "postalCode": "2011"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    670,
+                    371
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Shopping Mall",
+                "postalCode": "2000"
+            }
+        }
+    ]
+};

@@ -158,6 +158,17 @@ const atmLayer = L.geoJSON(atms, {
     onEachFeature
 });
 
+const vanLayer = L.geoJSON(vans, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: new PointIcon({ iconUrl: 'images/van-dot.png' }),
+            title: 'Van Man'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
+
 const baseLayers = {
     // "Default": defaultLayer
 };
@@ -172,6 +183,7 @@ const overlays = {
     "Dealerships": dealershipsLayer,
     "Mechanics": mechanicsLayer,
     "ATMs": atmLayer,
+    "Van Man": vanLayer,
     "Houses": housesLayer,
     "Other": otherLayer
 };
