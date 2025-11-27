@@ -32,13 +32,9 @@ function onEachFeature(feature, layer) {
         icon = new MarkerIcon({ iconUrl: 'images/house-marker.png' });
         layer.setIcon(icon);
     }
-    if (feature.properties.postalCode) {
-        postalCode = feature.properties.postalCode;
-        layer.bindTooltip(postalCode);
-        if (feature.properties.name) {
+    if (feature.properties.postalCode && feature.properties.name) {
             popupContent += ', ' + feature.properties.postalCode;
             layer.bindPopup(popupContent);
-        }
     }
 }
 
