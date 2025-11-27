@@ -54,7 +54,8 @@ const PointIcon = L.Icon.extend({
     options: {
         iconSize: [32, 32],
         iconAnchor: [16, 16],
-        popupAnchor: [0, -16]
+        popupAnchor: [0, -16],
+        tooltipAnchor: [16, 0]
     }
 });
 
