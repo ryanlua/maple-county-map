@@ -603,8 +603,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "Fairfield Apartments",
-                "postalCode": "1008",
-                "buyable": true
+                "postalCode": "1008"
             }
         },
         {
@@ -723,8 +722,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "19 Archer Road",
-                "postalCode": "3006",
-                "buyable": true
+                "postalCode": "3006"
             }
         },
         {
@@ -768,8 +766,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "20 Archer Road",
-                "postalCode": "3006",
-                "buyable": true
+                "postalCode": "3006"
             }
         },
         {
@@ -828,8 +825,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "11 Highland Street",
-                "postalCode": "2006",
-                "buyable": true
+                "postalCode": "2006"
             }
         },
         {
@@ -948,8 +944,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "28 Oxford Street",
-                "postalCode": "2006",
-                "buyable": true
+                "postalCode": "2006"
             }
         },
         {
@@ -963,8 +958,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "20 Oxford Street",
-                "postalCode": "2005",
-                "buyable": true
+                "postalCode": "2005"
             }
         },
         {
@@ -978,8 +972,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "22 Oxford Street",
-                "postalCode": "2005",
-                "buyable": true
+                "postalCode": "2005"
             }
         },
         {
@@ -1008,8 +1001,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "27 Oxford Street",
-                "postalCode": "2009",
-                "buyable": true
+                "postalCode": "2009"
             }
         },
         {
@@ -1068,8 +1060,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "33 Grove Street",
-                "postalCode": "2009",
-                "buyable": true
+                "postalCode": "2009"
             }
         },
         {
@@ -1188,8 +1179,7 @@ var houses = {
             "type": "Feature",
             "properties": {
                 "name": "14 Crazy Court",
-                "postalCode": "5000",
-                "buyable": true
+                "postalCode": "5000"
             }
         },
         {
