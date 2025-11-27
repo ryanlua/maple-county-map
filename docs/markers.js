@@ -1301,19 +1301,6 @@ var atms = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    741,
-                    653
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "postalCode": "2014"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     892,
                     843
                 ]
