@@ -28,13 +28,9 @@ function onEachFeature(feature, layer) {
         icon = new MarkerIcon({ iconUrl: feature.properties.icon });
         layer.setIcon(icon);
     }
-    if (feature.properties.buyable) {
-        icon = new MarkerIcon({ iconUrl: 'images/house-marker.png' });
-        layer.setIcon(icon);
-    }
     if (feature.properties.postalCode && feature.properties.name) {
-            popupContent += ', ' + feature.properties.postalCode;
-            layer.bindPopup(popupContent);
+        popupContent += ', ' + feature.properties.postalCode;
+        layer.bindPopup(popupContent);
     }
 }
 
@@ -128,15 +124,17 @@ const dealershipsLayer = L.geoJSON(dealerships, {
     onEachFeature
 }).addTo(map);
 
+const housesCluster = L.markerClusterGroup();
 const housesLayer = L.geoJSON(houses, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/yellow-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/house-marker.png' }),
             title: 'House'
         });
     },
     onEachFeature
 });
+housesCluster.addLayer(housesLayer);
 
 const otherLayer = L.geoJSON(other, {
     pointToLayer(geoJsonPoint, latlng) {
@@ -184,7 +182,7 @@ const overlays = {
     "Mechanics": mechanicsLayer,
     "ATMs": atmLayer,
     "Van Man": vanLayer,
-    "Houses": housesLayer,
+    "Houses": housesCluster,
     "Other": otherLayer
 };
 
