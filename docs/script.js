@@ -190,7 +190,7 @@ const tunnelsLayer = L.geoJSON(tunnels, {
 });
 
 const baseLayers = {
-    "Default": defaultLayer
+    // "Default": defaultLayer
 };
 
 const overlays = {
