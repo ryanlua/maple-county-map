@@ -16,7 +16,6 @@ L.control.attribution({ prefix: false }).addTo(map).addAttribution(
     'Images from <a href="https://maplecounty.fandom.com/" target="_blank">Maple County Wiki</a> available under <a href="https://www.fandom.com/licensing" target="_blank">CC-BY-SA</a>'
 );
 
-// eslint-disable-next-line no-unused-vars
 const defaultLayer = L.imageOverlay('images/map.avif', bounds).addTo(map);
 
 function onEachFeature(feature, layer) {
@@ -191,7 +190,7 @@ const tunnelsLayer = L.geoJSON(tunnels, {
 });
 
 const baseLayers = {
-    // "Default": defaultLayer
+    "Default": defaultLayer
 };
 
 const overlays = {
@@ -214,12 +213,27 @@ const layers = L.control.layers(baseLayers, overlays);
 map.addControl(layers);
 map.addControl(new L.Control.Permalink({ layers: layers }));
 
+const searchLayers = L.featureGroup(Object.values(overlays));
+
 const searchControl = new L.Control.Search({
-    position: 'topleft',
-    layer: defaultLayer,
+    layer: searchLayers,
     propertyName: 'name',
     initial: false,
     marker: false,
+    moveToLocation(latlng) {
+        map.setView(latlng, 2);
+    }
+});
+searchControl.on('search:locationfound', function (e) {
+    if (!map.hasLayer(e.layer)) {
+        e.layer.addTo(map);
+    }
+
+    if (e.layer.getPopup && e.layer.getPopup()) {
+        e.layer.openPopup();
+    } else if (e.layer.getTooltip && e.layer.getTooltip()) {
+        e.layer.openTooltip();
+    }
 });
 map.addControl(searchControl);
 
