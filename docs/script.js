@@ -210,11 +210,9 @@ const overlays = {
     "Other": otherLayer
 };
 
-const layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-
-map.addControl(new L.Control.Permalink({
-    layers: layerControl
-}));
+const layers = L.control.layers(baseLayers, overlays);
+map.addControl(layers);
+map.addControl(new L.Control.Permalink({ layers: layers }));
 
 // // Leaflet Draw
 // const drawnItems = new L.FeatureGroup();
