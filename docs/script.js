@@ -221,7 +221,7 @@ const searchControl = new L.Control.Search({
     initial: false,
     marker: false,
     moveToLocation(latlng) {
-        map.setView(latlng, 2);
+        map.setView(latlng, 3);
     }
 });
 searchControl.on('search:locationfound', function (e) {
