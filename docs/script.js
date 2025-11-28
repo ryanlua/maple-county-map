@@ -70,7 +70,7 @@ const teamsLayer = L.geoJSON(teams, {
 const gasStationLayer = L.geoJSON(gasStations, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/gas-station-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/gas-station-marker.png' }),
             title: 'Gas Station'
         });
     },
@@ -80,7 +80,7 @@ const gasStationLayer = L.geoJSON(gasStations, {
 const gunStoresLayer = L.geoJSON(gunStores, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/gun-store-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/gun-store-marker.png' }),
             title: 'Gun Store'
         });
     },
@@ -90,7 +90,7 @@ const gunStoresLayer = L.geoJSON(gunStores, {
 const jobLayer = L.geoJSON(jobs, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/job-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/job-marker.png' }),
             title: 'Job'
         });
     },
@@ -100,7 +100,7 @@ const jobLayer = L.geoJSON(jobs, {
 const hospitalsLayer = L.geoJSON(hospitals, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/hospital-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/hospital-marker.png' }),
             title: 'Hospital'
         });
     },
@@ -110,7 +110,7 @@ const hospitalsLayer = L.geoJSON(hospitals, {
 const banksLayer = L.geoJSON(banks, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/bank-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/bank-marker.png' }),
             title: 'Bank'
         });
     },
@@ -120,7 +120,7 @@ const banksLayer = L.geoJSON(banks, {
 const mechanicsLayer = L.geoJSON(mechanics, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/mechanics-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/mechanics-marker.png' }),
             title: 'Mechanics'
         });
     },
@@ -130,7 +130,7 @@ const mechanicsLayer = L.geoJSON(mechanics, {
 const dealershipsLayer = L.geoJSON(dealerships, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/dealership-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/dealership-marker.png' }),
             title: 'Dealership'
         });
     },
@@ -141,7 +141,7 @@ const housesCluster = L.markerClusterGroup();
 const housesLayer = L.geoJSON(houses, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/house-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/house-marker.png' }),
             title: 'House'
         });
     },
@@ -152,7 +152,7 @@ housesCluster.addLayer(housesLayer);
 const otherLayer = L.geoJSON(other, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/orange-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/orange-marker.png' }),
             title: 'Other'
         });
     },
@@ -162,7 +162,7 @@ const otherLayer = L.geoJSON(other, {
 const atmLayer = L.geoJSON(atms, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new PointIcon({ iconUrl: 'images/atm-dot.png' }),
+            icon: new PointIcon({ iconUrl: 'images/markers/atm-point.png' }),
             title: 'ATM'
         });
     },
@@ -172,7 +172,7 @@ const atmLayer = L.geoJSON(atms, {
 const vanLayer = L.geoJSON(vans, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new PointIcon({ iconUrl: 'images/van-dot.png' }),
+            icon: new PointIcon({ iconUrl: 'images/markers/van-point.png' }),
             title: 'Van Man'
         });
     },
@@ -182,7 +182,7 @@ const vanLayer = L.geoJSON(vans, {
 const tunnelsLayer = L.geoJSON(tunnels, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new PointIcon({ iconUrl: 'images/tunnel-dot.png' }),
+            icon: new PointIcon({ iconUrl: 'images/markers/tunnel-point.png' }),
             title: 'Tunnel'
         });
     },

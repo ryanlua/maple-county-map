@@ -128,7 +128,7 @@ body {
     border-radius: 50%;
     background-color: var(--medium-gray);
     border: 2px solid var(--dark-gray);
-    background-image: url(images/search-icon.svg);
+    background-image: url(images/search.svg);
     background-position: center;
     background-size: 22px;
 }
@@ -140,7 +140,7 @@ body {
 
 .leaflet-control-search .search-button:hover {
     background-color: var(--light-gray);
-    background-image: url(images/search-icon.svg);
+    background-image: url(images/search.svg);
     background-position: center;
     background-size: 22px;
 }
