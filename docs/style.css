@@ -175,3 +175,7 @@ body {
 .leaflet-touch .leaflet-draw-actions {
     left: 48px;
 }
+
+.leaflet-retina .leaflet-draw-toolbar a {
+    background-image: none;
+}
