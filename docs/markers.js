@@ -1466,7 +1466,10 @@ var tunnels = {
                     278
                 ]
             },
-            "type": "Feature"
+            "type": "Feature",
+            "properties": {
+                "name": "Port of Fairfield"
+            }
         },
         {
             "geometry": {
@@ -1476,7 +1479,23 @@ var tunnels = {
                     637
                 ]
             },
-            "type": "Feature"
-        }
+            "type": "Feature",
+            "properties": {
+                "name": "Cliffside"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    865,
+                    512
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "County Cliffside"
+            }
+        },
     ]
 };
