@@ -4,6 +4,8 @@
     --light-gray: #595959;
     --medium-gray: #3c3c3c;
     --dark-gray: #1e1e1e;
+
+    --medium-radius: 12px;
 }
 
 html,
@@ -71,7 +73,7 @@ body {
 }
 
 .leaflet-control-layers-expanded {
-    border-radius: 12px !important;
+    border-radius: var(--medium-radius) !important;
 }
 
 .leaflet-control-layers-separator {
@@ -117,6 +119,38 @@ body {
     line-height: 36px;
     color: #fff;
     font-weight: bold;
+}
+
+/* Search Control */
+.leaflet-control-search .search-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--medium-gray);
+    border: 2px solid var(--dark-gray);
+    background-image: url(images/search-icon.svg);
+    background-position: center;
+    background-size: 22px;
+}
+
+.leaflet-container .leaflet-control-search {
+    background: none;
+    border: none;
+}
+
+.leaflet-control-search .search-button:hover {
+    background-color: var(--light-gray);
+    background-image: url(images/search-icon.svg);
+    background-position: center;
+    background-size: 22px;
+}
+
+.leaflet-control-search .search-input {
+    background-color: var(--medium-gray);
+    border: 2px solid var(--dark-gray);
+    border-radius: var(--medium-radius);
+    padding: 11px 9px;
+    margin: 0px 8px 0px 0px;
 }
 
 /* Draw */
