@@ -214,6 +214,15 @@ const layers = L.control.layers(baseLayers, overlays);
 map.addControl(layers);
 map.addControl(new L.Control.Permalink({ layers: layers }));
 
+const searchControl = new L.Control.Search({
+    position: 'topleft',
+    layer: defaultLayer,
+    propertyName: 'name',
+    initial: false,
+    marker: false,
+});
+map.addControl(searchControl);
+
 // // Leaflet Draw
 // const drawnItems = new L.FeatureGroup();
 // map.addLayer(drawnItems);
