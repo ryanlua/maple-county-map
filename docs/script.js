@@ -213,7 +213,10 @@ const layers = L.control.layers(baseLayers, overlays);
 map.addControl(layers);
 map.addControl(new L.Control.Permalink({ layers: layers }));
 
-const searchLayers = L.featureGroup(Object.values(overlays));
+// Only include layers that are added to the map by default
+const searchLayers = L.featureGroup(
+    Object.values(overlays).filter(layer => map.hasLayer(layer))
+);
 
 const searchControl = new L.Control.Search({
     layer: searchLayers,
