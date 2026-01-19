@@ -2,7 +2,7 @@
 
 > [maplecounty.us](https://maplecounty.us/)
 
-Interactive map for [Maple County on Roblox](https://www.roblox.com/games/8416011646).
+Interactive map powered by [Leaflet](https://leafletjs.com/) for [Maple County on Roblox](https://www.roblox.com/games/8416011646) with locations for robberies, teams, jobs, and more. Includes filtering for markers and searching location names. 
 
 ![Map of Maple County](public/map.png)
 
