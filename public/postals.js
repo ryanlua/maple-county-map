@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 var postal2013 = {
     "type": "Feature",
     "geometry": {

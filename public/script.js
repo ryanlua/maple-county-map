@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 var bounds = [[0, 0], [1024, 1024]]; // TODO: Fix with correct bounds
 
 const map = L.map('map', {
