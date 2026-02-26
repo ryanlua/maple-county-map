@@ -18,9 +18,9 @@ L.control.attribution({ prefix: false }).addTo(map).addAttribution(
 // Change background color for postal layer to match the map
 map.on('baselayerchange', function (event) {
     const mapContainer = map.getContainer();
-    const color = event.layer === postalLayer
-        ? '#91daee'
-        : '#3177a0';
+    const color = event.layer === satelliteLayer
+        ? '#3177a0'
+        : '#91daee';
     mapContainer.style.backgroundColor = color;
 });
 
@@ -196,8 +196,8 @@ const tunnelsLayer = L.geoJSON(tunnels, {
 });
 
 const baseLayers = {
-    "Landscape": landscapeLayer,
-    "Postal": postalLayer
+    "Default": defaultLayer,
+    "Satellite": satelliteLayer
 };
 
 const overlays = {
