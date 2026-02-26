@@ -16,7 +16,14 @@ L.control.attribution({ prefix: false }).addTo(map).addAttribution(
     'Images from <a href="https://maplecounty.fandom.com/" target="_blank">Maple County Wiki</a> available under <a href="https://www.fandom.com/licensing" target="_blank">CC-BY-SA</a>'
 );
 
-const defaultLayer = L.imageOverlay('images/map.avif', bounds).addTo(map);
+// Change background color for postal layer to match the map
+map.on('baselayerchange', function (event) {
+    const mapContainer = map.getContainer();
+    const color = event.layer === postalLayer
+        ? '#91daee'
+        : '#3177a0';
+    mapContainer.style.backgroundColor = color;
+});
 
 function onEachFeature(feature, layer) {
     if (!feature.properties) {
