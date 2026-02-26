@@ -12,6 +12,9 @@ html,
 body {
     height: 100%;
     margin: 0;
+    background: var(--medium-gray);
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 #map {
