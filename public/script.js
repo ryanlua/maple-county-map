@@ -296,23 +296,23 @@ map.addControl(searchControl);
 // });
 // map.addControl(drawControl);
 
-// Handle draw events
-map.on(L.Draw.Event.CREATED, function (event) {
-    const layer = event.layer;
-    drawnItems.addLayer(layer);
-    console.log('Shape created:', layer.toGeoJSON());
-});
+// // Handle draw events
+// map.on(L.Draw.Event.CREATED, function (event) {
+//     const layer = event.layer;
+//     drawnItems.addLayer(layer);
+//     console.log('Shape created:', layer.toGeoJSON());
+// });
 
-map.on(L.Draw.Event.EDITED, function (event) {
-    const layers = event.layers;
-    layers.eachLayer(function (layer) {
-        console.log('Shape edited:', layer.toGeoJSON());
-    });
-});
+// map.on(L.Draw.Event.EDITED, function (event) {
+//     const layers = event.layers;
+//     layers.eachLayer(function (layer) {
+//         console.log('Shape edited:', layer.toGeoJSON());
+//     });
+// });
 
-map.on(L.Draw.Event.DELETED, function (event) {
-    const layers = event.layers;
-    layers.eachLayer(function (layer) {
-        console.log('Shape deleted:', layer.toGeoJSON());
-    });
-});
+// map.on(L.Draw.Event.DELETED, function (event) {
+//     const layers = event.layers;
+//     layers.eachLayer(function (layer) {
+//         console.log('Shape deleted:', layer.toGeoJSON());
+//     });
+// });
