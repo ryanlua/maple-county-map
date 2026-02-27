@@ -8,8 +8,6 @@ Hosted on [Cloudflare Pages](https://pages.cloudflare.com) and uses Cloudflare f
 
 [![Built with Cloudflare](https://workers.cloudflare.com/built-with-cloudflare.svg)](https://cloudflare.com)
 
-![Map of Maple County](public/map.png)
-
 ## Licence
 
 Available under [Creative Commons Attribution Share Alike 4.0 International](LICENSE.md).
