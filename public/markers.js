@@ -1,1499 +1,2561 @@
 var gasStations = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    656,
-                    367
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "1/11 Gas Station",
-                "postalCode": "2000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    741,
-                    653
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "1/11 County Gas Station",
-                "postalCode": "2014"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    892,
-                    843
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "ElkTrip Gas Station",
-                "postalCode": "5010"
-            }
-        },
-    ]
+    "features": []
 };
 
 var gunStores = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    507,
-                    220
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Valkyrian Arms",
-                "postalCode": "1003"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    735,
-                    883
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Bacon's Blickys",
-                "postalCode": "5014"
-            }
-        },
-    ]
+    "features": []
 };
 
 var jobs = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    810,
-                    360
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Droppin' Donuts",
-                "postalCode": "2002"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    799,
-                    398
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County News",
-                "postalCode": "2002"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    752,
-                    206
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Pizza Paradise",
-                "postalCode": "1007"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    698,
-                    367
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Taxi Co."
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    557,
-                    247
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County Postal Service",
-                "postalCode": "1012"
-            }
-        },
-    ]
+    "features": []
 };
 
 var teams = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    792,
-                    277
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Fairfield Police Department",
-                "postalCode": "2016",
-                "icon": "images/markers/fpd-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    680,
-                    909
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County Fire & Rescue",
-                "postalCode": "2018",
-                "icon": "images/markers/mcfr-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    600,
-                    651
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County Sheriffs Office",
-                "postalCode": "2015",
-                "icon": "images/markers/mcso-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    572,
-                    897
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Oakland State Patrol",
-                "postalCode": "4007",
-                "icon": "images/markers/osp-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    446,
-                    189
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County Public Works",
-                "postalCode": "1000",
-                "icon": "images/markers/mcpw-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    660,
-                    210
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Fairfield Fire Department",
-                "postalCode": "1005",
-                "icon": "images/markers/ffd-marker.png"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    752,
-                    447
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County Medical Services",
-                "postalCode": "2007",
-                "icon": "images/markers/mcms-marker.png"
-            }
-        }
-    ]
+    "features": []
 };
 
 var hospitals = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    596,
-                    216
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Archangel Hospital",
-                "postalCode": "1004"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    579,
-                    836
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Hanover Hospital",
-                "postalCode": "4006"
-            }
-        },
-    ]
+    "features": []
 };
 
 var banks = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    769,
-                    880
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Bank Of Oakland",
-                "postalCode": "5015"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    706,
-                    243
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Clover Financial Holdings",
-                "postalCode": "1010"
-            }
-        },
-    ]
+    "features": []
 };
 
 var dealerships = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    674,
-                    279
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Fairfield Motors",
-                "postalCode": "1013"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    861,
-                    789
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Hanover Motors",
-                "postalCode": "5004"
-            }
-        },
-    ]
+    "features": []
 };
 
 var mechanics = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    892,
-                    783
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Hanover Mechanics Shop",
-                "postalCode": "5005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    507,
-                    189
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Fairfield Mechanics",
-                "postalCode": "1003"
-            }
-        },
-    ]
+    "features": []
 };
 
-var misc = {
+var houses = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    757,
-                    362
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple Mart",
-                "postalCode": "2001"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    711,
-                    364
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Soobway",
-                "postalCode": "2000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    792,
-                    360
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Blox Burger",
-                "postalCode": "2002"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    678,
-                    362
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Knuckle Heads",
-                "postalCode": "2000",
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    711,
-                    284
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Maple County Court",
-                "postalCode": "1014"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    750,
-                    284
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Wyatt Skatepark",
-                "postalCode": "1015"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    753,
-                    248
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "British International Development Bank",
-                "postalCode": "1009"
-            }
-        },
-    ]
+    "features": []
+};
+
+var atms = {
+    "type": "FeatureCollection",
+    "features": []
+};
+
+var vans = {
+    "type": "FeatureCollection",
+    "features": []
+};
+
+var tunnels = {
+    "type": "FeatureCollection",
+    "features": []
 };
 
 var other = {
     "type": "FeatureCollection",
     "features": [
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    178,
-                    617
+                    413.82,
+                    262.214
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Landfill",
-                "postalCode": "4001",
-                "icon": "images/markers/landfill-marker.png"
+                "name": "Maple County Coastguard",
+                "postalCode": "1002"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    710,
-                    220
+                    466.878,
+                    768.118
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "DMV",
-                "postalCode": "1006",
-                "icon": "images/markers/dmv-marker.png"
+                "name": "Oakland State Police Post I",
+                "postalCode": "4007"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    230,
-                    485
+                    546.797,
+                    771.911
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Criminal Base",
-                "postalCode": "4000",
-                "icon": "images/markers/criminal-base-marker.png"
+                "name": "Maple County Fire & Rescue",
+                "postalCode": "5018"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    555,
-                    203
+                    495.157,
+                    598.25
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "TechnoCorps HQ",
-                "postalCode": "1004",
-                "icon": "images/markers/techno-marker.png"
+                "name": "Maple County Sheriff's Office",
+                "postalCode": "2015"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    678,
-                    241
+                    553.607,
+                    307.455
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "TechnoStore",
-                "postalCode": "1011",
-                "icon": "images/markers/techno-marker.png"
-            }
-        },
-    ]
-};
-
-var houses = {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    792,
-                    211
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Fairfield Apartments",
-                "postalCode": "1008"
+                "name": "Dispatch Center",
+                "postalCode": "1006"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    568,
-                    474
+                    569.212,
+                    466.036
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "12 Archer Court",
-                "postalCode": "3005"
+                "name": "Maple County Medical Services",
+                "postalCode": "2007"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    568,
-                    461
+                    209.342,
+                    577.763
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "15 Archer Court",
-                "postalCode": "3005"
+                "name": "Maple County Landfill",
+                "postalCode": "4001"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    568,
-                    487
+                    611.583,
+                    637.326
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "14 Archer Court",
-                "postalCode": "3005"
+                "name": "Hanover Park",
+                "postalCode": "5001"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    551,
-                    472
+                    628.512,
+                    633.248
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "13 Archer Court",
-                "postalCode": "3005"
+                "name": "Hanover Sports",
+                "postalCode": "5001"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    551,
-                    457
+                    560.605,
+                    221.146
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "11 Archer Court",
-                "postalCode": "3005"
+                "name": "Port of Fairfield",
+                "postalCode": "100"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    551,
-                    487
+                    323.025,
+                    555.095
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "15 Archer Court",
-                "postalCode": "3005"
+                "name": "Maple County Landfill",
+                "postalCode": "4001"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    551,
-                    512
+                    542.163,
+                    502.836
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "17 Archer Road",
-                "postalCode": "3006"
+                "name": "County Park",
+                "postalCode": "2010"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    551,
-                    525
+                    688.002,
+                    755.124
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "19 Archer Road",
-                "postalCode": "3006"
+                "name": "Hanover Bus Station"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    570,
-                    512
+                    285.856,
+                    711.021
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "16 Archer Road",
-                "postalCode": "3006"
+                "name": "Maple County Prison",
+                "postalCode": "4003"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    568,
-                    527
+                    556.633,
+                    639.318
                 ]
             },
-            "type": "Feature",
-            "properties": {
-                "name": "18 Archer Road",
-                "postalCode": "3006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    568,
-                    541
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "20 Archer Road",
-                "postalCode": "3006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    527,
-                    523
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "22 Pinewood Ave",
-                "postalCode": "3005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    527,
-                    508
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "21 Pinewood Ave",
-                "postalCode": "3005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    729,
-                    445
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "10 Highland Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    729,
-                    462
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "11 Highland Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    729,
-                    475
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "12 Highland Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    729,
-                    493
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "13 Highland Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    729,
-                    510
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "14 Highland Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    707,
-                    445
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "21 Oxford Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    707,
-                    462
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "23 Oxford Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    707,
-                    475
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "24 Oxford Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    707,
-                    493
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "26 Oxford Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    707,
-                    510
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "28 Oxford Street",
-                "postalCode": "2006"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    692,
-                    445
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "20 Oxford Street",
-                "postalCode": "2005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    692,
-                    460
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "22 Oxford Street",
-                "postalCode": "2005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    692,
-                    490
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "25 Oxford Street",
-                "postalCode": "2009"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    692,
-                    507
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "27 Oxford Street",
-                "postalCode": "2009"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    670,
-                    445
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "30 Grove Street",
-                "postalCode": "2005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    670,
-                    460
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "31 Grove Street",
-                "postalCode": "2005"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    670,
-                    490
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "32 Grove Street",
-                "postalCode": "2009"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    670,
-                    507
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "33 Grove Street",
-                "postalCode": "2009"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    704,
-                    677
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "21 Crazy Court",
-                "postalCode": "5000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    697,
-                    710
-                ]
-            },
-            "type": "Feature",
             "properties": {
                 "name": "17 Crazy Court",
-                "postalCode": "5000"
+                "postalCode": "0000"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    682,
-                    684
+                    574.981,
+                    621.297
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "23 Crazy Court",
+                "name": "20 Crazy Court",
                 "postalCode": "5000"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    657,
-                    691
+                    483.619,
+                    629.075
                 ]
             },
-            "type": "Feature",
-            "properties": {
-                "name": "18 Crazy Court",
-                "postalCode": "5000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    665,
-                    716
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "15 Crazy Court",
-                "postalCode": "5000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    630,
-                    721
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "13 Crazy Court",
-                "postalCode": "5000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    636,
-                    691
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "16 Crazy Court",
-                "postalCode": "5000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    608,
-                    694
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "14 Crazy Court",
-                "postalCode": "5000"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    589,
-                    693
-                ]
-            },
-            "type": "Feature",
             "properties": {
                 "name": "12 Crazy Court",
                 "postalCode": "5000"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    585,
-                    739
+                    604.868,
+                    774.946
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "1 Crazy Court",
+                "name": "113 Chestnut Street",
+                "postalCode": "5020"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    581.791,
+                    785
+                ]
+            },
+            "properties": {
+                "name": "112 South Street",
+                "postalCode": "5019"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    514.451,
+                    632.205
+                ]
+            },
+            "properties": {
+                "name": "16 Crazy Court",
                 "postalCode": "5000"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    728,
-                    708
+                    454.962,
+                    516.588
                 ]
             },
+            "properties": {
+                "name": "19 Pinewood Ave",
+                "postalCode": "3006"
+            }
+        },
+        {
             "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    471.229,
+                    475.141
+                ]
+            },
+            "properties": {
+                "name": "10 Archer Court",
+                "postalCode": "3005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    574.508,
+                    497.619
+                ]
+            },
+            "properties": {
+                "name": "7 Runamuck Way",
+                "postalCode": "2006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    471.229,
+                    492.403
+                ]
+            },
+            "properties": {
+                "name": "14 Archer Court",
+                "postalCode": "3005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    471.229,
+                    483.772
+                ]
+            },
+            "properties": {
+                "name": "12 Rocky Road",
+                "postalCode": "3005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    471.229,
+                    518.865
+                ]
+            },
+            "properties": {
+                "name": "18 Archer Road",
+                "postalCode": "3006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    546.23,
+                    624.996
+                ]
+            },
+            "properties": {
+                "name": "23 Crazy Court",
+                "postalCode": "5000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    439.073,
+                    505.681
+                ]
+            },
+            "properties": {
+                "name": "21 Pinewood Ave",
+                "postalCode": "3006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    529.962,
+                    630.213
+                ]
+            },
+            "properties": {
+                "name": "18 Crazy Court",
+                "postalCode": "5000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    439.073,
+                    514.881
+                ]
+            },
+            "properties": {
+                "name": "22 Pinewood Ave",
+                "postalCode": "3006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    455.056,
+                    473.244
+                ]
+            },
+            "properties": {
+                "name": "11 Archer Court",
+                "postalCode": "3005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    455.056,
+                    490.601
+                ]
+            },
+            "properties": {
+                "name": "15 Archer Court",
+                "postalCode": "3005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    455.056,
+                    481.875
+                ]
+            },
+            "properties": {
+                "name": "13 Archer Court",
+                "postalCode": "3005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    471.229,
+                    527.496
+                ]
+            },
+            "properties": {
+                "name": "20 Archer Road",
+                "postalCode": "3006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    496.765,
+                    630.877
+                ]
+            },
+            "properties": {
+                "name": "14 Crazy Court",
+                "postalCode": "5000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    573.468,
+                    773.808
+                ]
+            },
+            "properties": {
+                "name": "111 Cozy Street",
+                "postalCode": "5019"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    510.006,
+                    645.862
+                ]
+            },
+            "properties": {
+                "name": "13 Crazy Court",
+                "postalCode": "5000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    566.564,
+                    773.903
+                ]
+            },
+            "properties": {
+                "name": "112 Cozy Street",
+                "postalCode": "5019"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    623.027,
+                    778.456
+                ]
+            },
+            "properties": {
+                "name": "111 Walnut Street",
+                "postalCode": "5020"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    534.786,
+                    641.974
+                ]
+            },
+            "properties": {
+                "name": "15 Crazy Court",
+                "postalCode": "5000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    645.064,
+                    782.819
+                ]
+            },
+            "properties": {
+                "name": "112 Walnut Street",
+                "postalCode": "2021"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    575.454,
+                    636.852
+                ]
+            },
             "properties": {
                 "name": "19 Crazy Court",
                 "postalCode": "5000"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    728,
-                    678
+                    482.578,
+                    651.837
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "20 Crazy Court",
+                "name": "1 Crazy Court",
                 "postalCode": "5000"
             }
-        }
-    ]
-};
-
-var atms = {
-    "type": "FeatureCollection",
-    "features": [
+        },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    769,
-                    880
+                    455.056,
+                    507.957
                 ]
             },
-            "type": "Feature",
             "properties": {
+                "name": "17 Archer Road",
+                "postalCode": "3006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    601.085,
+                    783.957
+                ]
+            },
+            "properties": {
+                "name": "111 Chestnut Street",
+                "postalCode": "5020"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    397.553,
+                    648.233
+                ]
+            },
+            "properties": {
+                "name": "1 Country Road",
+                "postalCode": "4004"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    663.696,
+                    774.093
+                ]
+            },
+            "properties": {
+                "name": "111 Sunflower Street",
+                "postalCode": "5021"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    582.548,
+                    773.998
+                ]
+            },
+            "properties": {
+                "name": "114 Chestnut Street",
+                "postalCode": "5019"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    685.07,
+                    776.464
+                ]
+            },
+            "properties": {
+                "name": "112 Sunflower Street",
+                "postalCode": "5022"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    596.45,
+                    462.337
+                ]
+            },
+            "properties": {
+                "name": "1 Lakeview Road",
+                "postalCode": "2008"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    593.329,
+                    471.442
+                ]
+            },
+            "properties": {
+                "name": "2 Lakeview Road",
+                "postalCode": "2008"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    590.397,
+                    482.065
+                ]
+            },
+            "properties": {
+                "name": "3 Lakeview Road",
+                "postalCode": "2008"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    471.229,
+                    509.57
+                ]
+            },
+            "properties": {
+                "name": "16 Archer Road",
+                "postalCode": "3006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    563.254,
+                    482.254
+                ]
+            },
+            "properties": {
+                "name": "5 Runamuck Way",
+                "postalCode": "2006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    572.333,
+                    481.875
+                ]
+            },
+            "properties": {
+                "name": "4 Runamuck Way",
+                "postalCode": "2006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    575.549,
+                    513.458
+                ]
+            },
+            "properties": {
+                "name": "10 Grove Street",
+                "postalCode": "2012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    589.83,
+                    512.415
+                ]
+            },
+            "properties": {
+                "name": "9 Grove Street",
+                "postalCode": "2012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    563.064,
+                    513.648
+                ]
+            },
+            "properties": {
+                "name": "11 Grove Street",
+                "postalCode": "2012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    563.726,
+                    498.947
+                ]
+            },
+            "properties": {
+                "name": "8 Runamuck Way",
+                "postalCode": "2006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    584.628,
+                    712.538
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    618.014,
+                    751.235
+                ]
+            },
+            "properties": {
+                "name": "Hell's Cookhouse",
                 "postalCode": "5015"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    706,
-                    243
+                    558.052,
+                    743.553
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "postalCode": "1010"
+                "name": "Panacea Essential Oils",
+                "postalCode": "5014"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    656,
-                    367
+                    686.394,
+                    690.534
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "postalCode": "2000"
+                "name": "Hanover Mechanic",
+                "postalCode": "5005"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    892,
-                    843
+                    474.728,
+                    726.955
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "postalCode": "5010"
+                "name": "Hanover Hospital",
+                "postalCode": "4006"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    674,
-                    279
+                    684.503,
+                    253.203
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "postalCode": "1013"
+                "name": "Marina Heights",
+                "postalCode": "111"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    507,
-                    220
+                    624.54,
+                    751.33
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "postalCode": "1003"
-            }
-        },
-    ]
-};
-
-var vans = {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    507,
-                    204
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Gun Store",
-                "postalCode": "1003"
+                "name": "Double Scoop",
+                "postalCode": "5015"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    403,
-                    262
+                    599.382,
+                    722.307
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Docks",
-                "postalCode": "1000"
+                "name": "Building",
+                "postalCode": "5007"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    392,
-                    294
+                    606.003,
+                    736.819
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Cliffside",
-                "postalCode": "3001"
+                "name": "K&G Bakery",
+                "postalCode": "5012"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    176,
-                    610
+                    554.931,
+                    710.357
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Landfill",
-                "postalCode": "4001"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    431,
-                    724
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Farm",
-                "postalCode": "4004"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    443,
-                    769
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Farm",
-                "postalCode": "4004"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    691,
-                    811
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Hanover Parking Lot",
+                "name": "Velvet Vinyl",
                 "postalCode": "5002"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    831,
-                    849
+                    632.768,
+                    222.663
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Katie's Flower Center",
+                "name": "MG LTD",
+                "postalCode": "108"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    614.326,
+                    248.556
+                ]
+            },
+            "properties": {
+                "name": "Bank of Oakland Office",
+                "postalCode": "105"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    569.117,
+                    255.195
+                ]
+            },
+            "properties": {
+                "name": "Fairfield Town Hall",
+                "postalCode": "101"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    533.651,
+                    333.442
+                ]
+            },
+            "properties": {
+                "name": "Mall",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    610.164,
+                    736.724
+                ]
+            },
+            "properties": {
+                "name": "Retro Red's",
+                "postalCode": "5012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    616.028,
+                    737.008
+                ]
+            },
+            "properties": {
+                "name": "Thai Dining",
+                "postalCode": "5022"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    623.878,
+                    736.724
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    625.581,
+                    713.202
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5008"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    528.638,
+                    719.747
+                ]
+            },
+            "properties": {
+                "name": "Evasion Tax Group",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    653.197,
+                    751.14
+                ]
+            },
+            "properties": {
+                "name": "Herb House",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    549.067,
+                    245.236
+                ]
+            },
+            "properties": {
+                "name": "Maple County Boats",
+                "postalCode": "1000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    377.502,
+                    321.397
+                ]
+            },
+            "properties": {
+                "name": "Maple County Boats",
+                "postalCode": "1000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    639.294,
+                    732.266
+                ]
+            },
+            "properties": {
+                "name": "Captiol Stationers",
                 "postalCode": "5013"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    727,
-                    652
+                    617.069,
+                    717.85
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "County Gas Station",
+                "name": "Building",
+                "postalCode": "5008"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    580.372,
+                    595.215
+                ]
+            },
+            "properties": {
+                "name": "1/11 County Gas Station",
                 "postalCode": "2014"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    850,
-                    549
+                    558.336,
+                    722.971
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "County Cliffside",
-                "postalCode": "2011"
+                "name": "Velvet Vinyl",
+                "postalCode": "5002"
             }
         },
         {
+            "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    670,
-                    371
+                    639.294,
+                    727.144
                 ]
             },
-            "type": "Feature",
             "properties": {
-                "name": "Shopping Mall",
+                "name": "Ember Fabric & Craft",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    546.702,
+                    756.072
+                ]
+            },
+            "properties": {
+                "name": "The Pug Residence",
+                "postalCode": "5014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    625.581,
+                    722.307
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5008"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    432.168,
+                    295.315
+                ]
+            },
+            "properties": {
+                "name": "Fairfield Mechanics",
+                "postalCode": "1003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    532.232,
+                    309.731
+                ]
+            },
+            "properties": {
+                "name": "Clover Financial Holdings Bank",
+                "postalCode": "1005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    639.484,
+                    717.85
+                ]
+            },
+            "properties": {
+                "name": "Maple County Arcade",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    571.482,
+                    692.716
+                ]
+            },
+            "properties": {
+                "name": "AMW Showroom",
+                "postalCode": "5002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    602.409,
+                    736.629
+                ]
+            },
+            "properties": {
+                "name": "Gordons Loan Office",
+                "postalCode": "5012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    564.483,
+                    350.42
+                ]
+            },
+            "properties": {
+                "name": "Pizza Paradise",
+                "postalCode": "1014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    645.726,
+                    691.862
+                ]
+            },
+            "properties": {
+                "name": "Hanover Church",
+                "postalCode": "5004"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    686.962,
+                    720.79
+                ]
+            },
+            "properties": {
+                "name": "ElkTrip Gas Station",
+                "postalCode": "5010"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    663.128,
+                    694.992
+                ]
+            },
+            "properties": {
+                "name": "Hanover Dealership",
+                "postalCode": "5004"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    624.54,
+                    698.217
+                ]
+            },
+            "properties": {
+                "name": "Hanover Courthouse",
+                "postalCode": "5003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    674.383,
+                    312.292
+                ]
+            },
+            "properties": {
+                "name": "Events Center",
+                "postalCode": "111"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    534.691,
+                    724.584
+                ]
+            },
+            "properties": {
+                "name": "Panacea Essential Oils",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    667.762,
+                    750.856
+                ]
+            },
+            "properties": {
+                "name": "Abandoned Bakery",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    536.961,
+                    726.386
+                ]
+            },
+            "properties": {
+                "name": "Berry & Brethren",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    530.057,
+                    744.596
+                ]
+            },
+            "properties": {
+                "name": "Hanover Museum",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    602.976,
+                    751.045
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5015"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    597.113,
+                    751.33
+                ]
+            },
+            "properties": {
+                "name": "Government Office",
+                "postalCode": "5015"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    627.945,
+                    750.761
+                ]
+            },
+            "properties": {
+                "name": "Stella Bikes",
+                "postalCode": "5015"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    646.766,
+                    736.819
+                ]
+            },
+            "properties": {
+                "name": "Half Penny Hardware",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    526.179,
+                    407.327
+                ]
+            },
+            "properties": {
+                "name": "Fairfield City Gas",
                 "postalCode": "2000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    621.987,
+                    751.33
+                ]
+            },
+            "properties": {
+                "name": "Panacea Essential Oils",
+                "postalCode": "5015"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    657.926,
+                    751.615
+                ]
+            },
+            "properties": {
+                "name": "Neils Spectacle Shop",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    431.979,
+                    314.284
+                ]
+            },
+            "properties": {
+                "name": "Valkyrian Arms",
+                "postalCode": "1003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    659.25,
+                    736.819
+                ]
+            },
+            "properties": {
+                "name": "Daves Fish & Chips",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    662.088,
+                    750.856
+                ]
+            },
+            "properties": {
+                "name": "Snapps Camera Supply",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    646.199,
+                    751.899
+                ]
+            },
+            "properties": {
+                "name": "James Lock & Security",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    639.484,
+                    712.159
+                ]
+            },
+            "properties": {
+                "name": "Wexler & McGill",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    542.446,
+                    353.739
+                ]
+            },
+            "properties": {
+                "name": "Fairfield Automotives",
+                "postalCode": "1013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    551.81,
+                    738.526
+                ]
+            },
+            "properties": {
+                "name": "Jewlery Store",
+                "postalCode": "5014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    540.649,
+                    728.757
+                ]
+            },
+            "properties": {
+                "name": "Bacon's Blickys",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    543.865,
+                    339.228
+                ]
+            },
+            "properties": {
+                "name": "Maple County Arcade",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    664.641,
+                    736.819
+                ]
+            },
+            "properties": {
+                "name": "Cools Jewels",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    240.837,
+                    652.217
+                ]
+            },
+            "properties": {
+                "name": "Cabin #5",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    567.226,
+                    750.002
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    211.707,
+                    634.481
+                ]
+            },
+            "properties": {
+                "name": "Cabin #2",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    639.294,
+                    737.577
+                ]
+            },
+            "properties": {
+                "name": "Katies Flower Center",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    570.347,
+                    735.017
+                ]
+            },
+            "properties": {
+                "name": "Granite Line",
+                "postalCode": "5011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    653.481,
+                    736.819
+                ]
+            },
+            "properties": {
+                "name": "Rush Real Estate",
+                "postalCode": "5013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    600.139,
+                    691.388
+                ]
+            },
+            "properties": {
+                "name": "The Hanover Estate",
+                "postalCode": "5003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    531.759,
+                    721.549
+                ]
+            },
+            "properties": {
+                "name": "The Annex",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    545,
+                    407.611
+                ]
+            },
+            "properties": {
+                "name": "MAKS",
+                "postalCode": "2000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    660.007,
+                    717.565
+                ]
+            },
+            "properties": {
+                "name": "Hanover Post Office",
+                "postalCode": "5009"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    304.677,
+                    758.918
+                ]
+            },
+            "properties": {
+                "name": "Hanover Mechanics",
+                "postalCode": "4003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    524.949,
+                    716.237
+                ]
+            },
+            "properties": {
+                "name": "Bobs Coffee",
+                "postalCode": "5023"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    608.367,
+                    717.85
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5007"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    561.457,
+                    746.303
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    229.677,
+                    661.037
+                ]
+            },
+            "properties": {
+                "name": "Cabin #8",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    228.825,
+                    655.347
+                ]
+            },
+            "properties": {
+                "name": "Cabin #6",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    243.485,
+                    657.433
+                ]
+            },
+            "properties": {
+                "name": "Cabin #7",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    585.007,
+                    717.281
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    585.196,
+                    721.169
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    585.196,
+                    724.963
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    579.899,
+                    712.064
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    576.305,
+                    712.064
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    566.28,
+                    715.004
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    571.86,
+                    712.633
+                ]
+            },
+            "properties": {
+                "name": "Flats",
+                "postalCode": "5006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    649.793,
+                    751.615
+                ]
+            },
+            "properties": {
+                "name": "The Gift Garden",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    217.665,
+                    635.714
+                ]
+            },
+            "properties": {
+                "name": "Cabin #3",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    599.477,
+                    713.202
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5007"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    600.423,
+                    203.315
+                ]
+            },
+            "properties": {
+                "name": "Gas Station",
+                "postalCode": "107"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    611.961,
+                    751.045
+                ]
+            },
+            "properties": {
+                "name": "Coop's Cookies",
+                "postalCode": "4000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    205.748,
+                    649.941
+                ]
+            },
+            "properties": {
+                "name": "Maple Lodge",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    206.032,
+                    633.627
+                ]
+            },
+            "properties": {
+                "name": "Cabin #1",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    223.813,
+                    637.99
+                ]
+            },
+            "properties": {
+                "name": "Cabin #4",
+                "postalCode": "4002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    597.491,
+                    737.103
+                ]
+            },
+            "properties": {
+                "name": "Riyabar",
+                "postalCode": "5012"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    563.348,
+                    729.421
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    580.845,
+                    753.227
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "5014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    652.441,
+                    238.028
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "109"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    552.377,
+                    713.582
+                ]
+            },
+            "properties": {
+                "name": "Velvet Vinyl",
+                "postalCode": "5002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    629.08,
+                    297.97
+                ]
+            },
+            "properties": {
+                "name": "White Rock",
+                "postalCode": "103"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    653.67,
+                    310.869
+                ]
+            },
+            "properties": {
+                "name": "Milk Group LTD.",
+                "postalCode": "103"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    546.986,
+                    715.858
+                ]
+            },
+            "properties": {
+                "name": "Panacea Essential Oils",
+                "postalCode": "5017"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    602.125,
+                    178.75
+                ]
+            },
+            "properties": {
+                "name": "Maple County Boats",
+                "postalCode": "100"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    617.447,
+                    290.762
+                ]
+            },
+            "properties": {
+                "name": "Wisp & Co.",
+                "postalCode": "103"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    623.973,
+                    413.681
+                ]
+            },
+            "properties": {
+                "name": "Maple County News",
+                "postalCode": "2004"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    640.24,
+                    751.899
+                ]
+            },
+            "properties": {
+                "name": "Bank of Oakland",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    581.129,
+                    737.293
+                ]
+            },
+            "properties": {
+                "name": "Chamber Of Commerce",
+                "postalCode": "5011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    579.994,
+                    353.455
+                ]
+            },
+            "properties": {
+                "name": "AMW Showroom",
+                "postalCode": "1014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    549.634,
+                    717.66
+                ]
+            },
+            "properties": {
+                "name": "Velvet Vinyl",
+                "postalCode": "5002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    567.793,
+                    337.236
+                ]
+            },
+            "properties": {
+                "name": "DMV",
+                "postalCode": "1014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    595.221,
+                    275.682
+                ]
+            },
+            "properties": {
+                "name": "Court House",
+                "postalCode": "102"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    542.825,
+                    712.823
+                ]
+            },
+            "properties": {
+                "name": "Jewlery Store",
+                "postalCode": "5014"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    578.481,
+                    425.537
+                ]
+            },
+            "properties": {
+                "name": "Maple Mart",
+                "postalCode": "2001"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    583.21,
+                    235.847
+                ]
+            },
+            "properties": {
+                "name": "Building",
+                "postalCode": "104"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    524.004,
+                    338.849
+                ]
+            },
+            "properties": {
+                "name": "Code 8",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    528.827,
+                    328.7
+                ]
+            },
+            "properties": {
+                "name": "Empty Lot",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    543.865,
+                    327.941
+                ]
+            },
+            "properties": {
+                "name": "TechnoCorps",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    539.609,
+                    328.7
+                ]
+            },
+            "properties": {
+                "name": "Wipskate",
+                "postalCode": "1011"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    548.026,
+                    427.149
+                ]
+            },
+            "properties": {
+                "name": "Droppin' Donuts",
+                "postalCode": "2002"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    664.83,
+                    417.191
+                ]
+            },
+            "properties": {
+                "name": "Maple County Transit Hub",
+                "postalCode": "2011"
             }
         }
     ]
 };
 
-var tunnels = {
+var misc = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    403,
-                    278
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Port of Fairfield"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    294,
-                    637
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Cliffside"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    865,
-                    512
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "County Cliffside"
-            }
-        },
-    ]
+    "features": []
 };

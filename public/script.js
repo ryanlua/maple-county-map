@@ -175,7 +175,7 @@ housesCluster.addLayer(housesLayer);
 const otherLayer = L.geoJSON(other, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
-            icon: new MarkerIcon({ iconUrl: 'images/markers/orange-marker.png' }),
+            icon: new MarkerIcon({ iconUrl: 'images/markers/empty-marker.png' }),
             title: 'Other'
         });
     },
