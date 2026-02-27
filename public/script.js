@@ -15,6 +15,24 @@ L.control.attribution({ prefix: false }).addTo(map).addAttribution(
     'Images from <a href="https://maplecounty.fandom.com/" target="_blank">Maple County Wiki</a> available under <a href="https://www.fandom.com/licensing" target="_blank">CC-BY-SA</a>'
 );
 
+const mapWidth = bounds[1][1] - bounds[0][1];
+const mapHeight = bounds[1][0] - bounds[0][0];
+const mapTileSize = L.point(mapWidth / 6, mapHeight / 6);
+
+const defaultLayer = L.tileLayer('images/maps/default/{z}/{x}/{y}.png', {
+    bounds,
+    tileSize: mapTileSize,
+    minNativeZoom: 0,
+    maxNativeZoom: 0
+}).addTo(map);
+
+const satelliteLayer = L.tileLayer('images/maps/satellite/{z}/{x}/{y}.png', {
+    bounds,
+    tileSize: mapTileSize,
+    minNativeZoom: 0,
+    maxNativeZoom: 0
+});
+
 // Change background color for postal layer to match the map
 map.on('baselayerchange', function (event) {
     const mapContainer = map.getContainer();
