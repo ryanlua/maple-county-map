@@ -111,63 +111,6 @@ var jobs = {
                 "postalCode": "2002"
             }
         },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    660.007,
-                    717.565
-                ]
-            },
-            "properties": {
-                "name": "Hanover Post Office",
-                "postalCode": "5009"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    549.067,
-                    245.236
-                ]
-            },
-            "properties": {
-                "name": "Maple County Boats",
-                "postalCode": "1000"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    377.502,
-                    321.397
-                ]
-            },
-            "properties": {
-                "name": "Maple County Boats",
-                "postalCode": "1000"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    602.125,
-                    178.75
-                ]
-            },
-            "properties": {
-                "name": "Maple County Boats",
-                "postalCode": "100"
-            }
-        },
         {
             "type": "Feature",
             "geometry": {
@@ -180,6 +123,20 @@ var jobs = {
             "properties": {
                 "name": "Maple County News",
                 "postalCode": "2004"
+            }
+        },
+                {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                   471.25, 
+                   334.25
+                ]
+            },
+            "properties": {
+                "name": "Maple County Postal Service",
+                "postalCode": "1012"
             }
         },
         {
@@ -422,6 +379,48 @@ var dealerships = {
             "properties": {
                 "name": "Hanover Dealership",
                 "postalCode": "5004"
+            }
+        },
+        // {
+        //     "type": "Feature",
+        //     "geometry": {
+        //         "type": "Point",
+        //         "coordinates": [
+        //             549.067,
+        //             245.236
+        //         ]
+        //     },
+        //     "properties": {
+        //         "name": "Maple County Boats",
+        //         "postalCode": "1000"
+        //     }
+        // },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    377.502,
+                    321.397
+                ]
+            },
+            "properties": {
+                "name": "Maple County Boats",
+                "postalCode": "1000"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    602.125,
+                    178.75
+                ]
+            },
+            "properties": {
+                "name": "Maple County Boats",
+                "postalCode": "100"
             }
         }
     ]
@@ -2094,7 +2093,9 @@ var other = {
             },
             "properties": {
                 "name": "Maple County Landfill",
-                "postalCode": "4001"
+                "postalCode": "4001",
+                "icon": "images/markers/landfill-marker.png"
+
             }
         },
         {
@@ -2565,6 +2566,20 @@ var other = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    660.007,
+                    717.565
+                ]
+            },
+            "properties": {
+                "name": "Hanover Post Office",
+                "postalCode": "5009"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     571.482,
                     692.716
                 ]
@@ -2643,6 +2658,21 @@ var other = {
                 "name": "Hanover Mechanics",
                 "postalCode": "4003"
             }
-        }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    245.875,
+                    490.5
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Criminal Base",
+                "postalCode": "4000",
+                "icon": "images/markers/criminal-base-marker.png"
+            }
+        },
     ]
 };
