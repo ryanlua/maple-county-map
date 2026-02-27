@@ -1883,7 +1883,8 @@ var other = {
             },
             "properties": {
                 "name": "DMV",
-                "postalCode": "1014"
+                "postalCode": "1014",
+                "icon": "images/markers/dmv-marker.png"
             }
         },
         {
