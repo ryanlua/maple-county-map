@@ -1541,6 +1541,86 @@ var other = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    567.793,
+                    337.236
+                ]
+            },
+            "properties": {
+                "name": "DMV",
+                "postalCode": "1014",
+                "icon": "images/markers/dmv-marker.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    209.342,
+                    577.763
+                ]
+            },
+            "properties": {
+                "name": "Maple County Landfill",
+                "postalCode": "4001",
+                "icon": "images/markers/landfill-marker.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    543.865,
+                    327.941
+                ]
+            },
+            "properties": {
+                "name": "TechnoCorps",
+                "postalCode": "1011",
+                "icon": "images/markers/techno-marker.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    595.221,
+                    275.682
+                ]
+            },
+            "properties": {
+                "name": "Court House",
+                "postalCode": "102"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    245.875,
+                    490.5
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Criminal Base",
+                "postalCode": "4000",
+                "icon": "images/markers/criminal-base-marker.png"
+            }
+        },
+    ]
+};
+
+var hidden = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     667.762,
                     750.856
                 ]
@@ -1877,21 +1957,6 @@ var other = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    567.793,
-                    337.236
-                ]
-            },
-            "properties": {
-                "name": "DMV",
-                "postalCode": "1014",
-                "icon": "images/markers/dmv-marker.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     624.54,
                     751.33
                 ]
@@ -2220,21 +2285,6 @@ var other = {
             "properties": {
                 "name": "Maple County Arcade",
                 "postalCode": "1011"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    209.342,
-                    577.763
-                ]
-            },
-            "properties": {
-                "name": "Maple County Landfill",
-                "postalCode": "4001",
-                "icon": "images/markers/landfill-marker.png"
             }
         },
         {
@@ -2747,20 +2797,6 @@ var other = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    595.221,
-                    275.682
-                ]
-            },
-            "properties": {
-                "name": "Court House",
-                "postalCode": "102"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     624.54,
                     698.217
                 ]
@@ -2783,21 +2819,6 @@ var other = {
                 "name": "Hanover Mechanics",
                 "postalCode": "4003"
             }
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    245.875,
-                    490.5
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "name": "Criminal Base",
-                "postalCode": "4000",
-                "icon": "images/markers/criminal-base-marker.png"
-            }
-        },
+        }
     ]
-};
+}
