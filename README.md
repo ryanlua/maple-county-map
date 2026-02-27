@@ -12,4 +12,4 @@ Hosted on [Cloudflare Pages](https://pages.cloudflare.com) and uses Cloudflare f
 
 ## Licence
 
-Available under [Creative Commons Attribution Share Alike 4.0 International](LICENSE.md). Images from [Maple County Wiki](https://maplecounty.fandom.com/).
+Available under [Creative Commons Attribution Share Alike 4.0 International](LICENSE.md).
