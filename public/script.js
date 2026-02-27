@@ -1,9 +1,9 @@
-var bounds = [[0, 0], [1024, 1024]]; // TODO: Fix with correct bounds
+var bounds = [[0, 0], [1024, 1024]];
 
 const map = L.map('map', {
     crs: L.CRS.Simple,
     maxZoom: 4,
-    center: [550, 575],
+    center: [550, 475],
     zoom: 0,
     attributionControl: false,
     maxBounds: bounds
@@ -265,43 +265,43 @@ searchControl.on('search:locationfound', function (e) {
 });
 map.addControl(searchControl);
 
-// // Leaflet Draw
-// const drawnItems = new L.FeatureGroup();
-// map.addLayer(drawnItems);
+// Leaflet Draw
+const drawnItems = new L.FeatureGroup();
+map.addLayer(drawnItems);
 
-// const drawControl = new L.Control.Draw({
-//     position: 'bottomleft',
-//     edit: {
-//         featureGroup: drawnItems
-//     },
-//     draw: {
-//         polygon: true,
-//         polyline: true,
-//         rectangle: true,
-//         circle: true,
-//         marker: true,
-//         circlemarker: true
-//     }
-// });
-// map.addControl(drawControl);
+const drawControl = new L.Control.Draw({
+    position: 'bottomleft',
+    edit: {
+        featureGroup: drawnItems
+    },
+    draw: {
+        polygon: true,
+        polyline: true,
+        rectangle: true,
+        circle: true,
+        marker: true,
+        circlemarker: true
+    }
+});
+map.addControl(drawControl);
 
-// // Handle draw events
-// map.on(L.Draw.Event.CREATED, function (event) {
-//     const layer = event.layer;
-//     drawnItems.addLayer(layer);
-//     console.log('Shape created:', layer.toGeoJSON());
-// });
+// Handle draw events
+map.on(L.Draw.Event.CREATED, function (event) {
+    const layer = event.layer;
+    drawnItems.addLayer(layer);
+    console.log('Shape created:', layer.toGeoJSON());
+});
 
-// map.on(L.Draw.Event.EDITED, function (event) {
-//     const layers = event.layers;
-//     layers.eachLayer(function (layer) {
-//         console.log('Shape edited:', layer.toGeoJSON());
-//     });
-// });
+map.on(L.Draw.Event.EDITED, function (event) {
+    const layers = event.layers;
+    layers.eachLayer(function (layer) {
+        console.log('Shape edited:', layer.toGeoJSON());
+    });
+});
 
-// map.on(L.Draw.Event.DELETED, function (event) {
-//     const layers = event.layers;
-//     layers.eachLayer(function (layer) {
-//         console.log('Shape deleted:', layer.toGeoJSON());
-//     });
-// });
+map.on(L.Draw.Event.DELETED, function (event) {
+    const layers = event.layers;
+    layers.eachLayer(function (layer) {
+        console.log('Shape deleted:', layer.toGeoJSON());
+    });
+});
