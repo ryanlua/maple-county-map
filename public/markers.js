@@ -1613,7 +1613,7 @@ var other = {
     ]
 };
 
-var hidden = {
+var buildings = {
     "type": "FeatureCollection",
     "features": [
         {

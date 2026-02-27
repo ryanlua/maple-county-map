@@ -171,6 +171,18 @@ const housesLayer = L.geoJSON(houses, {
 });
 housesCluster.addLayer(housesLayer);
 
+const buildingsCluster = L.markerClusterGroup();
+const buildingsLayer = L.geoJSON(buildings, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: new MarkerIcon({ iconUrl: 'images/markers/empty-marker.png' }),
+            title: 'Building'
+        });
+    },
+    onEachFeature
+});
+buildingsCluster.addLayer(buildingsLayer);
+
 const otherLayer = L.geoJSON(other, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
@@ -229,7 +241,8 @@ const overlays = {
     "Van Man": vanLayer,
     "Tunnels": tunnelsLayer,
     "Houses": housesCluster,
-    "Other": otherLayer
+    "Buildings": buildingsCluster,
+    "Other": otherLayer,
 };
 
 const layers = L.control.layers(baseLayers, overlays);
