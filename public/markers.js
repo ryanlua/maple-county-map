@@ -1467,15 +1467,69 @@ var tunnels = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    560.605,
-                    221.146
+                    560.605, 221.146
                 ]
             },
             "properties": {
                 "name": "Port of Fairfield",
                 "postalCode": "100"
             }
-        }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    323.025,
+                    555.095
+                ]
+            },
+            "properties": {
+                "name": "Maple County Landfill",
+                "postalCode": "4001"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    666.5,
+                    529.125
+                ]
+            },
+            "properties": {
+                "name": "County Cliffside",
+                "postalCode": "2011"
+            }
+        }, {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    359.375,
+                    353.4375
+                ]
+            },
+            "properties": {
+                "name": "Docks",
+                "postalCode": "3001"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    245.875,
+                    490.5
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "name": "Criminal Base",
+                "postalCode": "4000"
+            }
+        },
     ]
 };
 
@@ -2180,21 +2234,6 @@ var other = {
                 "name": "Maple County Landfill",
                 "postalCode": "4001",
                 "icon": "images/markers/landfill-marker.png"
-
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    323.025,
-                    555.095
-                ]
-            },
-            "properties": {
-                "name": "Maple County Landfill",
-                "postalCode": "4001"
             }
         },
         {
