@@ -276,25 +276,25 @@ searchControl.on('search:locationfound', function (e) {
 });
 map.addControl(searchControl);
 
-// Leaflet Draw
-const drawnItems = new L.FeatureGroup();
-map.addLayer(drawnItems);
+// // Leaflet Draw
+// const drawnItems = new L.FeatureGroup();
+// map.addLayer(drawnItems);
 
-const drawControl = new L.Control.Draw({
-    position: 'bottomleft',
-    edit: {
-        featureGroup: drawnItems
-    },
-    draw: {
-        polygon: true,
-        polyline: true,
-        rectangle: true,
-        circle: true,
-        marker: true,
-        circlemarker: true
-    }
-});
-map.addControl(drawControl);
+// const drawControl = new L.Control.Draw({
+//     position: 'bottomleft',
+//     edit: {
+//         featureGroup: drawnItems
+//     },
+//     draw: {
+//         polygon: true,
+//         polyline: true,
+//         rectangle: true,
+//         circle: true,
+//         marker: true,
+//         circlemarker: true
+//     }
+// });
+// map.addControl(drawControl);
 
 // Handle draw events
 map.on(L.Draw.Event.CREATED, function (event) {
