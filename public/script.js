@@ -10,8 +10,7 @@ const map = L.map('map', {
 });
 
 L.control.attribution({ prefix: false }).addTo(map).addAttribution(
-    '<a href="https://discord.gg/f6Jx8Y8Fu7" target="_blank">Discord</a> | ' +
-    '<a href="https://github.com/ryanlua/maple-county-map" target="_blank">GitHub</a> | '
+    '<a href="https://github.com/ryanlua/maple-county-map" target="_blank">GitHub</a>'
 );
 
 const mapWidth = bounds[1][1] - bounds[0][1];
