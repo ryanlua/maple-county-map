@@ -125,13 +125,13 @@ var jobs = {
                 "postalCode": "2004"
             }
         },
-                {
+        {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                   471.25, 
-                   334.25
+                    471.25,
+                    334.25
                 ]
             },
             "properties": {
@@ -345,8 +345,7 @@ var banks = {
                 "name": "Clover Financial Holdings Bank",
                 "postalCode": "1005"
             }
-        },
-
+        }
     ]
 };
 
@@ -1351,7 +1350,93 @@ var houses = {
 
 var atms = {
     "type": "FeatureCollection",
-    "features": []
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    431.979,
+                    314.284
+                ]
+            },
+            "properties": {
+                "name": "Valkyrian Arms",
+                "postalCode": "1003"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    686.962,
+                    720.79
+                ]
+            },
+            "properties": {
+                "name": "ElkTrip Gas Station",
+                "postalCode": "5010"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    640.24,
+                    751.899
+                ]
+            },
+            "properties": {
+                "name": "Bank of Oakland",
+                "postalCode": "5016"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    532.232,
+                    309.731
+                ]
+            },
+            "properties": {
+                "name": "Clover Financial Holdings Bank",
+                "postalCode": "1005"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    542.446,
+                    353.739
+                ]
+            },
+            "properties": {
+                "name": "Fairfield Automotives",
+                "postalCode": "1013"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    526.179,
+                    407.327
+                ]
+            },
+            "properties": {
+                "name": "Fairfield City Gas",
+                "postalCode": "2000"
+            }
+        },
+
+    ]
 };
 
 var vans = {
