@@ -1146,6 +1146,160 @@ var vans = {
                 "postalCode": "5013",
             },
         },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [386.875, 680.9375],
+            },
+            "properties": {
+                "name": "Farm Barn #2",
+                "postalCode": "4004",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [378.625, 650.5],
+            },
+            "properties": {
+                "name": "Farm Barn #1",
+                "postalCode": "4004",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [209.342, 577.763],
+            },
+            "properties": {
+                "name": "Landfill",
+                "postalCode": "4001",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [205.748, 649.941],
+            },
+            "properties": {
+                "name": "Maple Lodge",
+                "postalCode": "4002",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [544.375, 706.75],
+            },
+            "properties": {
+                "name": "Hanover Parking Lot",
+                "postalCode": "5002",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [580.372, 595.215],
+            },
+            "properties": {
+                "name": "County Gas Station",
+                "postalCode": "2014",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [658.625, 533],
+            },
+            "properties": {
+                "name": "County Cliffside",
+                "postalCode": "2011",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [350.375, 373],
+            },
+            "properties": {
+                "name": "Cliffside",
+                "postalCode": "3001",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [354.75, 346.375],
+            },
+            "properties": {
+                "name": "Cliffside Sewer",
+                "postalCode": "1000",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [429.5625, 304.8125],
+            },
+            "properties": {
+                "name": "Gun Store",
+                "postalCode": "1003",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [530.3125, 418.125],
+            },
+            "properties": {
+                "name": "City Gas Station",
+                "postalCode": "2000",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [583.21, 235.847],
+            },
+            "properties": {
+                "name": "Bank of Oakland Office",
+                "postalCode": "104",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [696.625, 237.125],
+            },
+            "properties": {
+                "name": "Marina Heights",
+                "postalCode": "111",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [638.5, 264.75],
+            },
+            "properties": {
+                "name": "Fairfield Luxury Apartment Parking Lot",
+                "postalCode": "100",
+            },
+        },
     ],
 };
 
