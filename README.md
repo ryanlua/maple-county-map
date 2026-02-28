@@ -8,6 +8,8 @@ Hosted on [Cloudflare Pages](https://pages.cloudflare.com) and uses Cloudflare f
 
 [![Built with Cloudflare](https://workers.cloudflare.com/built-with-cloudflare.svg)](https://cloudflare.com)
 
+![Screenshot](https://github.com/user-attachments/assets/3fc408df-00b7-4e5b-9c06-9ece85c79286)
+
 ## Licence
 
 Available under [Creative Commons Attribution Share Alike 4.0 International](LICENSE.md).
