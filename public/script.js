@@ -10,6 +10,7 @@ const map = L.map('map', {
 });
 
 L.control.attribution({ prefix: false }).addTo(map).addAttribution(
+    '<a href="https://forms.gle/BqQSxGKY2Fj6YHmFA" target="_blank">Feedback</a> | ' +
     '<a href="https://www.roblox.com/games/8416011646" target="_blank">Roblox</a> | ' +
     '<a href="https://github.com/ryanlua/maple-county-map" target="_blank">GitHub</a> | ' +
     '<a href="https://discord.gg/gpdF8E4YXn" target="_blank">Discord</a>'
