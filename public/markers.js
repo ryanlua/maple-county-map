@@ -180,11 +180,11 @@ var teams = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [389.875, 294.5],
+                "coordinates": [622, 440.75],
             },
             "properties": {
                 "name": "Maple County Public Works",
-                "postalCode": "1000",
+                "postalCode": "2002",
                 "icon": "images/markers/mcpw-marker.png",
             },
         },
@@ -2376,6 +2376,17 @@ var buildings = {
             "properties": {
                 "name": "Hanover Mechanics",
                 "postalCode": "4003",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [389.875, 294.5],
+            },
+            "properties": {
+                "name": "Maple County Warehouse",
+                "postalCode": "1000",
             },
         },
     ],
