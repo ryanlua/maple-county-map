@@ -317,6 +317,7 @@ var dealerships = {
             "properties": {
                 "name": "Maple County Boats",
                 "postalCode": "1000",
+                "icon": "images/markers/boat-dealership-marker.png",
             },
         },
         {
@@ -328,6 +329,7 @@ var dealerships = {
             "properties": {
                 "name": "Maple County Boats",
                 "postalCode": "100",
+                "icon": "images/markers/boat-dealership-marker.png",
             },
         },
     ],
