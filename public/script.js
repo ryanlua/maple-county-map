@@ -102,6 +102,16 @@ const gasStationLayer = L.geoJSON(gasStations, {
     onEachFeature
 }).addTo(map);
 
+const chargingPointsLayer = L.geoJSON(chargingPoints, {
+    pointToLayer(geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: new PointIcon({ iconUrl: 'images/markers/charger-point.png' }),
+            title: 'Charging Point'
+        });
+    },
+    onEachFeature
+}).addTo(map);
+
 const gunStoresLayer = L.geoJSON(gunStores, {
     pointToLayer(geoJsonPoint, latlng) {
         return L.marker(latlng, {
@@ -235,6 +245,7 @@ const overlays = {
     "Teams": teamsLayer,
     "Jobs": jobLayer,
     "Gas Stations": gasStationLayer,
+    "Charging Points": chargingPointsLayer,
     "Gun Stores": gunStoresLayer,
     "Hospitals": hospitalsLayer,
     "Banks": banksLayer,

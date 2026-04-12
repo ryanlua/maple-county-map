@@ -1,3 +1,97 @@
+var chargingPoints = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [686.962, 720.79],
+            },
+            "properties": {
+                "name": "ElkTrip Gas Station",
+                "postalCode": "5010",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [526.179, 407.327],
+            },
+            "properties": {
+                "name": "Fairfield City Gas",
+                "postalCode": "2000",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [542.446, 353.739],
+            },
+            "properties": {
+                "name": "Fairfield Automotives",
+                "postalCode": "1013",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [664.83, 417.191],
+            },
+            "properties": {
+                "name": "Maple County Transit Hub",
+                "postalCode": "2011",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [580.372, 595.215],
+            },
+            "properties": {
+                "name": "1/11 County Gas Station",
+                "postalCode": "2014",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [465.375, 307.875],
+            },
+            "properties": {
+                "name": "Fairfield Regional Medical Center",
+                "postalCode": "1006",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [567.793, 337.236],
+            },
+            "properties": {
+                "name": "DMV",
+                "postalCode": "1014",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [578.481, 425.537],
+            },
+            "properties": {
+                "name": "Maple Mart",
+                "postalCode": "2001",
+            },
+        },
+    ],
+};
+
 var gasStations = {
     "type": "FeatureCollection",
     "features": [
