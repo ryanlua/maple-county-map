@@ -1069,6 +1069,17 @@ var atms = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
+                "coordinates": [465.375, 307.875],
+            },
+            "properties": {
+                "name": "Fairfield Regional Medical Center",
+                "postalCode": "1006",
+            },
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
                 "coordinates": [431.979, 314.284],
             },
             "properties": {
