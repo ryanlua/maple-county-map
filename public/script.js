@@ -110,7 +110,7 @@ const chargingPointsLayer = L.geoJSON(chargingPoints, {
         });
     },
     onEachFeature
-}).addTo(map);
+});
 
 const gunStoresLayer = L.geoJSON(gunStores, {
     pointToLayer(geoJsonPoint, latlng) {
