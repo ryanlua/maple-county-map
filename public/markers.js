@@ -1168,6 +1168,7 @@ var atms = {
             "properties": {
                 "name": "Fairfield Regional Medical Center",
                 "postalCode": "1006",
+                "quantity": 1,
             },
         },
         {
@@ -1179,6 +1180,7 @@ var atms = {
             "properties": {
                 "name": "Valkyrian Arms",
                 "postalCode": "1003",
+                "quantity": 1,
             },
         },
         {
@@ -1190,6 +1192,7 @@ var atms = {
             "properties": {
                 "name": "ElkTrip Gas Station",
                 "postalCode": "5010",
+                "quantity": 2,
             },
         },
         {
@@ -1201,7 +1204,7 @@ var atms = {
             "properties": {
                 "name": "Bank of Oakland",
                 "postalCode": "5016",
-                "quantity": 2,
+                "quantity": 3,
             },
         },
         {
@@ -1213,6 +1216,7 @@ var atms = {
             "properties": {
                 "name": "Clover Financial Holdings Bank",
                 "postalCode": "1005",
+                "quantity": 2,
             },
         },
         {
@@ -1224,6 +1228,7 @@ var atms = {
             "properties": {
                 "name": "Fairfield Automotives",
                 "postalCode": "1013",
+                "quantity": 1,
             },
         },
         {
@@ -1235,6 +1240,7 @@ var atms = {
             "properties": {
                 "name": "Fairfield City Gas",
                 "postalCode": "2000",
+                "quantity": 1,
             },
         },
     ],
