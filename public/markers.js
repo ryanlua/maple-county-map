@@ -1201,6 +1201,7 @@ var atms = {
             "properties": {
                 "name": "Bank of Oakland",
                 "postalCode": "5016",
+                "quantity": 2,
             },
         },
         {

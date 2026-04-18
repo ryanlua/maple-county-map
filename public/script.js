@@ -208,9 +208,11 @@ const otherLayer = L.geoJSON(other, {
 
 const atmLayer = L.geoJSON(atms, {
     pointToLayer(geoJsonPoint, latlng) {
+        const quantity = geoJsonPoint.properties && geoJsonPoint.properties.quantity;
+        const title = quantity ? quantity + 'x ATM' : 'ATM';
         return L.marker(latlng, {
             icon: new PointIcon({ iconUrl: 'images/markers/atm-point.png' }),
-            title: 'ATM'
+            title
         });
     },
     onEachFeature
