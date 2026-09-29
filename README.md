@@ -8,7 +8,8 @@ Hosted on [Cloudflare Pages](https://pages.cloudflare.com) and uses Cloudflare f
 
 [![Built with Cloudflare](https://workers.cloudflare.com/built-with-cloudflare.svg)](https://cloudflare.com)
 
-![Screenshot](https://github.com/user-attachments/assets/3fc408df-00b7-4e5b-9c06-9ece85c79286)
+![Maple County flat map](public/images/maps/default.png)
+![Maple County satellite map](public/images/maps/satellite.png)
 
 ## Licence
 
