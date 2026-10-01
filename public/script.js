@@ -1,4 +1,5 @@
-var bounds = [[0, 0], [1026, 1026]];
+
+var bounds = [[0, 0], [1024, 1024]];
 
 const map = L.map('map', {
     crs: L.CRS.Simple,
